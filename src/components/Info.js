@@ -37,7 +37,7 @@ const Info = (props) => (
             </button>
             <ul className="dropdown-menu" aria-labelledby="dropdownMenu1">
               <li>
-                <a href="#">TR</a>
+                <a href="tr">TR</a>
               </li>
             </ul>
           </div>

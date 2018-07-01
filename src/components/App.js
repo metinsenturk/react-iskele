@@ -16,10 +16,10 @@ class App extends Component {
           <Route 
           exact path="/" 
           render={ (props) => <Home hotel_name="İskele Butik Otel" hotel_snag="Bektaş Köyü" /> } />
-          <Route exact path="/hakkimizda" component={Home} />
-          <Route exact path="/odalar" component={Home} />
-          <Route exact path="/galeri" component={Home} />
-          <Route exact path="/iletisim" component={Home} />
+          <Route path="/hakkimizda" component={Home} />
+          <Route path="/odalar" component={Home} />
+          <Route path="/galeri" component={Home} />
+          <Route path="/iletisim" component={Home} />
         </Switch>
 
         <Footer hotel_name="İskele Butik Otel" hotel_snag="Bektaş Köyü" />

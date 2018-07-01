@@ -43,7 +43,7 @@ const Footer = props => (
             <div className="footer__item">
               <h3 className="newsletter__title">Bültene Kayıt Olun</h3>
               <p className="newsletter__subtitle">
-                İletişimde kalın, size ege sahilinin en güzel yerlerini gösterelim.  
+                İletişimde kalın, Ege Sahilinin en güzel yerleriyle tanışın.  
               </p>
 
               <div id="mc_embed_signup">
