@@ -21,7 +21,7 @@ const Info = (props) => (
           <Social 
           url_twitter="http://twitter.com/iskelebutikhotel"
           url_fb="http://fb.com/iskelebutikhotel"
-          url_instagram="" />
+          url_instagram="http://instagram.com/iskelebutikhotel" />
           <div className="dropdown lang-menu">
             <button
               className="dropdown-toggle"

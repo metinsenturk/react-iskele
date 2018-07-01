@@ -7,9 +7,9 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&subset=latin-ext');
 html {
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -1171,7 +1171,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: #374853;
@@ -7352,7 +7352,7 @@ button.close {
   margin-left: 3px;
   font-weight: 400;
   font-size: 13px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .contacts__form > .form-group > .form-control,
 .comments__form > .form-group > .form-control {
@@ -7456,7 +7456,7 @@ button.close {
   background-color: transparent;
   border: none;
   font-size: 26px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: none;
 }
 @media (max-width: 1199px) {
@@ -7800,7 +7800,7 @@ button.close {
   margin-bottom: 10px;
 }
 .section__footer .footer__copyright .footer_copyright__text {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   letter-spacing: 0.05em;
 }
@@ -8257,7 +8257,7 @@ Last change:	04/30/2017
   padding: 0;
   text-align: center;
   font-size: 26px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', sans-serif;
 }
 @media (max-width: 1199px) {
   .section__availability .reservation__form > .form-group > .form-group__inner .form-control {
@@ -8282,7 +8282,7 @@ Last change:	04/30/2017
 }
 .section__availability .reservation__form > .form-group > .form-group__inner .form-caption > h2 {
   font-size: 76px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
 }
 .section__availability .reservation__form > .form-group > .form-group__inner .form-caption > h2 > span {
@@ -8595,7 +8595,7 @@ Last change:	04/30/2017
   -webkit-transition-delay: 0.4s;
           transition-delay: 0.4s;
   font-size: 24px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .section__best-rooms .best-rooms__content .best-rooms__item figcaption .item__price > small {
   font-size: 14px;
@@ -9105,7 +9105,7 @@ Last change:	04/30/2017
 }
 .section__testimonials .testimonials__body .testimonials__wrapper .testimonials__item .testimonials__caption .testimonials_caption__prof {
   font-style: italic;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', sans-serif;
   color: #deaa86;
 }
 /*** 13. Section: Events ***/
@@ -10104,7 +10104,7 @@ Last change:	04/30/2017
   letter-spacing: 0.05em;
 }
 .section__room-detail .room__reviews .reviews__list .review .review__date {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: italic;
   letter-spacing: 0.03em;
   font-size: 12px;
@@ -10553,7 +10553,7 @@ Last change:	04/30/2017
   padding: 20px;
 }
 .section__blog .blog__item .blog-item__content .blog-item__category {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', sans-serif;
   color: #374853;
   letter-spacing: 0.03em;
   margin-bottom: 15px;
@@ -10570,7 +10570,7 @@ Last change:	04/30/2017
   margin-bottom: 15px;
 }
 .section__blog .blog__item .blog-item__content .blog-item__date {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: italic;
   letter-spacing: 0.03em;
 }
@@ -10811,7 +10811,7 @@ Last change:	04/30/2017
   }
 }
 .section__blog-item .blog__item .blog-item__content .blog-item__category {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', sans-serif;
   color: #374853;
   text-align: center;
   letter-spacing: 0.03em;
@@ -10830,7 +10830,7 @@ Last change:	04/30/2017
   margin-bottom: 15px;
 }
 .section__blog-item .blog__item .blog-item__content .blog-item__date {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: italic;
   text-align: center;
   letter-spacing: 0.03em;
@@ -10998,7 +10998,7 @@ Last change:	04/30/2017
 }
 .section__blog-item .comments .comments__list .comment .comment__date,
 .section__blog-item .comments .comments-list__cildren .comment .comment__date {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: italic;
   letter-spacing: 0.03em;
   font-size: 12px;
@@ -11021,7 +11021,7 @@ Last change:	04/30/2017
 }
 .section__blog-item .comments .comments__list .comment .comment__reply > a,
 .section__blog-item .comments .comments-list__cildren .comment .comment__reply > a {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: italic;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -11251,7 +11251,7 @@ Last change:	04/30/2017
 }
 .section__404error .section__content .section_content__action > a {
   font-weight: 700;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', sans-serif;
   color: #fff;
   text-decoration: none;
   -webkit-transition: color 0.3s;
@@ -11481,7 +11481,7 @@ Last change:	04/30/2017
 .section_layouts-footer {
   padding: 50px 0;
   background-color: #374853;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: .05em;
   color: #fff;
   font-size: 14px;
