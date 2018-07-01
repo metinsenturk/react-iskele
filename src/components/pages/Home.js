@@ -19,7 +19,7 @@ const Home = props => (
               Çok yakında, hizmetinizde..
             </p>
 
-            <a href="https://www.facebook.com/%C4%B0skele-Butik-Hotel-201343214036856/" className="btn btn-reservation">
+            <a href="http://fb.me/iskelebutikhotel" className="btn btn-reservation">
               Facebook'tan takip et
             </a>
           </div>
