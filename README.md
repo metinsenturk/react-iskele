@@ -4,4 +4,8 @@
 
 ## Current Page Screenshot
 
-![Coming Soon Screenshot](https://raw.githubusercontent.com/metinsenturk/react-iskele/coming-soon/public/screenshots/coming-soon.jpeg)
+![Coming Soon Screenshot]()
+
+<p align="center">
+  <img alt="coming soon screenshot" src="https://raw.githubusercontent.com/metinsenturk/react-iskele/coming-soon/public/screenshots/coming-soon.jpeg">
+</p>
