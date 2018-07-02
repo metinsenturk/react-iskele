@@ -5,6 +5,7 @@ const Home = props => (
   <div>
     <Helmet
       title="İskele Butik Otel"
+      link={[{ rel: "canonical", href: "https://iskelebutikhotel.com/" }]}
       meta={[
         {
           name: "description",

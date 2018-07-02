@@ -30,7 +30,7 @@ class App extends Component {
           <Route path="/odalar" component={Rooms} />
           <Route path="/galeri" component={Gallery} />
           <Route path="/iletisim" component={Contact} />
-          <Route exact path="/yerler/:keyword" component={Places} />
+          <Route exact path="/:keyword" component={Places} />
         </Switch>
 
         <Footer hotel_name="İskele Butik Otel" hotel_snag="Bektaş Köyü" />

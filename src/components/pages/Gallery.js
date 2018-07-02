@@ -5,6 +5,7 @@ const Gallery = props => (
   <div>
     <Helmet
       title="Fotoğraflarla İskele Butik Otel."
+      link={[{ rel: "canonical", href: "https://iskelebutikhotel.com/galeri" }]}
       meta={[
         {
           name: "description",

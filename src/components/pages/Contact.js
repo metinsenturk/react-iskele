@@ -5,6 +5,7 @@ const Contact = props => (
   <div>
     <Helmet
       title="İletişime Geçin."
+      link={[{ rel: "canonical", href: "https://iskelebutikhotel.com/iletisim" }]}
       meta={[
         {
           name: "description",

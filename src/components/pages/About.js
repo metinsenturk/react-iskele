@@ -5,6 +5,7 @@ const About = props => (
   <div>
     <Helmet
       title="İskele Butik Otelin Sahipleriyle Tanışın."
+      link={[{ rel: "canonical", href: "https://iskelebutikhotel.com/hakkimizda" }]}
       meta={[
         {
           name: "description",

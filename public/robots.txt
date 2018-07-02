@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /hakkimizda
+Allow: /odalar
+Allow: /galeri
+Allow: /
+Allow: /iletisim
+Disallow: /assets
+Disallow: /static
+Disallow: /screenshots
+Sitemap: http://iskelebutikhotel.com/sitemap.xml
+
+
