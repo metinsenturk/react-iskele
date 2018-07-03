@@ -3,53 +3,154 @@ import Helmet from "react-helmet";
 
 const Places = ({ match }) => {
   const urls = [
-    "assos",
-    "sivrice",
-    "behramkale",
-    "sivrice-koyu",
-    "bektas",
-    "assos-antik-tiyatro",
-    "assos-antik-kent",
-    "assos-otel",
-    "behramkale-otel",
-    "sivrice-otel"
-  ];
-  if (urls.includes(match.params.keyword)) {
+    {
+      slug: "assos",
+      url: "https://iskelebutikhotel.com/assos",
+      title: "Assos Otel | İskele Butik Otel",
+      description: "Assos antik kenti ve assos antik tiyatro'da tatil için otel arayışınız son bulsun. İskele butik otel'de konaklayın.",
+      og_title: "Assos antik kenti",
+      og_type: "website",
+      og_url: "https://iskelebutikhotel.com/assos",
+      heading: "Assos",
+      paragraph: "Assos tarihten bu yana ilgi odağı olmuş bir yerdir."
+    },
+    {
+      slug: "sivrice",
+      url: "",
+      title: "",
+      description: "",
+      og_title: "",
+      og_type: "",
+      og_url: "",
+      heading: "",
+      paragraph: ""
+    },
+    {
+      slug: "behramkale",
+      url: "",
+      title: "",
+      description: "",
+      og_title: "",
+      og_type: "",
+      og_url: "",
+      heading: "",
+      paragraph: ""
+    },
+    {
+      slug: "sivrice-koyu",
+      url: "",
+      title: "",
+      description: "",
+      og_title: "",
+      og_type: "",
+      og_url: "",
+      heading: "",
+      paragraph: ""
+    },
+    {
+      slug: "bektas",
+      url: "",
+      title: "",
+      description: "",
+      og_title: "",
+      og_type: "",
+      og_url: "",
+      heading: "",
+      paragraph: ""
+    },
+    {
+      slug: "assos-antik-tiyatro",
+      url: "",
+      title: "",
+      description: "",
+      og_title: "",
+      og_type: "",
+      og_url: "",
+      heading: "",
+      paragraph: ""
+    },
+    {
+      slug: "assos-antik-kent",
+      url: "",
+      title: "",
+      description: "",
+      og_title: "",
+      og_type: "",
+      og_url: "",
+      heading: "",
+      paragraph: ""
+    },
+    {
+      slug: "assos-otel",
+      url: "",
+      title: "",
+      description: "",
+      og_title: "",
+      og_type: "",
+      og_url: "",
+      heading: "",
+      paragraph: ""
+    },
+    {
+      slug: "behramkale-otel",
+      url: "",
+      title: "",
+      description: "",
+      og_title: "",
+      og_type: "",
+      og_url: "",
+      heading: "",
+      paragraph: ""
+    },
+    {
+      slug: "sivrice-otel",
+      url: "",
+      title: "",
+      description: "",
+      og_title: "",
+      og_type: "",
+      og_url: "",
+      heading: "",
+      paragraph: ""
+    }
+  ]
+
+  if (urls.filter(v => v.slug === match.params.keyword).length > 0) {
+    let url = urls.filter(v => v.slug === match.params.keyword)[0];
     return (
       <div>
         <Helmet
-          title={"İskele Butik Otel ve " + match.params.keyword}
+          title={url.title}
           link={[
             {
               rel: "canonical",
-              href: "https://iskelebutikhotel.com/" + match.params.keyword
+              href: url.url
             }
           ]}
           meta={[
             {
               name: "description",
-              content: ""
+              content: url.description
             },
             {
               property: "og:type",
-              content: "website"
+              content: url.og_type
             },
             {
               property: "og:title",
-              content:
-                "İskele Butik Otelin Yakınındaki Yerler: " +
-                match.params.keyword
+              content: url.og_title
             },
             {
               property: "og:url",
-              content: "https://iskelebutikhotel.com/" + match.params.keyword
+              content: url.og_url
             }
           ]}
         />
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
-              
+              <h2>{ url.heading }</h2>
+              <p>{ url.paragraph }</p>
             </div>
           </div>
         </div>
