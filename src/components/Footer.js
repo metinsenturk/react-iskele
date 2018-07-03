@@ -19,31 +19,54 @@ const Footer = props => (
             </div>
           </div>
           <div className="col-xs-12 col-sm-4 col-sm-pull-4 col-md-3 col-md-pull-6">
-            <div className="footer__item">
-              <ul className="footer__links">
-              <li>
-                  <Link to="/">Anasayfa</Link>
-                </li>
-                <li>
-                  <Link to="/hakkimizda">Hakkımızda</Link>
-                </li>
-                <li>
-                <Link to="/odalar">Odalar</Link>
-                </li>
-                <li>
-                <Link to="/galeri">Galeri</Link>
-                </li>
-                <li>
-                <Link to="/iletisim">İletişim</Link>
-                </li>
-              </ul>
+            <div className="col-xs-5">
+              <div className="footer__item">
+                <ul className="footer__links">
+                  <li>
+                    <Link to="/">Anasayfa</Link>
+                  </li>
+                  <li>
+                    <Link to="/hakkimizda">Hakkımızda</Link>
+                  </li>
+                  <li>
+                    <Link to="/odalar">Odalar</Link>
+                  </li>
+                  <li>
+                    <Link to="/galeri">Galeri</Link>
+                  </li>
+                  <li>
+                    <Link to="/iletisim">İletişim</Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-xs-7">
+              <div className="footer__item">
+                <ul className="footer__links">
+                  <li>
+                    <Link to="/assos-antik-kent">Assos Antik Kent</Link>
+                  </li>
+                  <li>
+                    <Link to="/assos-otel">Assos'da Konaklama</Link>
+                  </li>
+                  <li>
+                    <Link to="/sivrice-koyu">Sivrice Koyu</Link>
+                  </li>
+                  <li>
+                    <Link to="/behramkale">Behramkale</Link>
+                  </li>
+                  <li>
+                    <Link to="/bektas">Bektaş Köyü</Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div className="col-xs-12 col-sm-4 col-md-3">
             <div className="footer__item">
               <h3 className="newsletter__title">Bültene Kayıt Olun</h3>
               <p className="newsletter__subtitle">
-                İletişimde kalın, Ege Sahilinin en güzel yerleriyle tanışın.  
+                İletişimde kalın, Ege Sahilinin en güzel yerleriyle tanışın.
               </p>
 
               <div id="mc_embed_signup">
@@ -102,7 +125,7 @@ const Footer = props => (
           <div className="col-xs-12">
             <hr />
             <p className="footer_copyright__text">
-              &#169; 2018 İskele Butik Otel. Tüm Hakları Saklıdır. 
+              &#169; 2018 İskele Butik Otel. Tüm Hakları Saklıdır.
             </p>
           </div>
         </div>
