@@ -3,7 +3,7 @@ import Helmet from "react-helmet";
 import { Switch, Route } from "react-router-dom";
 import Breadcrumb from "./Breadcrumb";
 import RoomsItem from "./rooms/RoomsItem";
-import Home from "./Home";
+import RoomDetail from "./rooms/RoomDetail";
 
 const RoomsHandler = props => {
   const rooms = [
@@ -80,7 +80,7 @@ const Rooms = props => {
     <div>
       <Switch>
         <Route exact path="/odalar" component={RoomsHandler} />
-        <Route path="/odalar/:room" component={Home} />
+        <Route path="/odalar/:room" component={RoomDetail} />
       </Switch>
     </div>
   );
