@@ -21,7 +21,7 @@ const Nav = props => {
               <span className="icon-bar" />
             </button>
 
-            <a className="navbar-brand" href="index.html">
+            <a className="navbar-brand" href="/">
               <h3 className="navbar-brand__logo">{ props.hotel_name }</h3>
               <p className="navbar-brand__sublogo">{ props.hotel_snag }</p>
             </a>
@@ -49,7 +49,6 @@ const Nav = props => {
                 <li>
                     <Link to="/odalar">Tüm Odalar</Link>
                   </li>
-                  <li><hr /></li>
                   <li>
                     <Link to="/odalar/1">Oda 1</Link>
                   </li>
@@ -64,7 +63,7 @@ const Nav = props => {
             </ul>
             <ul className="nav navbar-nav navbar-right">
               <li>
-                <Link to="/reservasyon">Rezervasyon</Link>
+                <Link to="/rezervasyon">Rezervasyon</Link>
               </li>
               <li className="dropdown">
                 <a

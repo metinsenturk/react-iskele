@@ -9,6 +9,7 @@ import Rooms from "./pages/Rooms";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import Places from "./pages/Places";
+import Reservation from "./pages/Reservation";
 
 class App extends Component {
   render() {
@@ -28,8 +29,8 @@ class App extends Component {
             )}
           />
           <Route path="/hakkimizda" component={About} />
-          <Route path="/odalar" component={Rooms} />
-          <Route path="/rezervasyon" component={Gallery} />
+          <Route path="/odalar" component={Rooms} />          
+          <Route path="/rezervasyon" component={Reservation} />
           <Route path="/galeri" component={Gallery} />
           <Route path="/iletisim" component={Contact} />
           <Route exact path="/:keyword" component={Places} />

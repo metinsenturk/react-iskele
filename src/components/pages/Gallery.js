@@ -1,5 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
+import Breadcrumb from "./Breadcrumb";
 
 const Gallery = props => (
   <div>
@@ -15,6 +16,12 @@ const Gallery = props => (
         { property: "og:title", content: "İskele Butik Otel Resimleri. Bahçe, Yemek Salonu ve fazlasi." },
         { property: "og:url", content: "https://iskelebutikhotel.com/galeri" }
       ]}
+    />
+    <Breadcrumb
+      contentBackgroundImage="gallery_bg.jpg"
+      contentTitle="İskele Butik Otel Fotoğrafları"
+      contentDescription="Sizin için odaların, genel otel görünümünün, Sivrice Koyu'nun, Assos Sahilinin fotoğraflarını çektik."
+      breadcrumbCurrent="Fotoğraflar"
     />
   </div>
 );

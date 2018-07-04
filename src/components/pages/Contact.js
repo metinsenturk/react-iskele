@@ -1,5 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
+import Breadcrumb from "./Breadcrumb";
 
 const Contact = props => (
   <div>
@@ -15,6 +16,12 @@ const Contact = props => (
         { property: "og:title", content: "İskele Koyunu bize sorun." },
         { property: "og:url", content: "https://iskelebutikhotel.com/iletisim" }
       ]}
+    />
+    <Breadcrumb
+      contentBackgroundImage="contacts_bg.jpg"
+      contentTitle="Bizimle İletişime Geçin."
+      contentDescription="Otelimiz veya Sivrice Koyu hakkında sorularınız varsa, bize aşağıdaki bilgilerden ulaşabilirsiniz."
+      breadcrumbCurrent="İletişim"
     />
   </div>
 );
