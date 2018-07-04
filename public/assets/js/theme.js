@@ -161,7 +161,7 @@ var alert = (function() {
 var newsletter = (function() {
 
     // Variables
-    var $form = $("#mc-embedded-subscribe-form");
+    var $form = $("#contact__form");
 
     // Proceed form
     function register() {
