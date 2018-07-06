@@ -1,6 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import Breadcrumb from "./Breadcrumb";
+import GalleryDetail from "./gallery/GalleryDetail";
 
 const Gallery = props => (
   <div>
@@ -23,6 +24,7 @@ const Gallery = props => (
       contentDescription="Sizin için odaların, genel otel görünümünün, Sivrice Koyu'nun, Assos Sahilinin fotoğraflarını çektik."
       breadcrumbCurrent="Fotoğraflar"
     />
+    <GalleryDetail { ...props } activeHash={props.location.hash} />
   </div>
 );
 

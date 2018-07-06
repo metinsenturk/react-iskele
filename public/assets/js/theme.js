@@ -398,7 +398,7 @@ $(function() {
 	});
 
 	/*** Gallery (filtering) ***/
-
+	/*
 	var $gallery = $("#gallery__items");
 
 	if ($gallery.length) {
@@ -431,6 +431,7 @@ $(function() {
 			e.preventDefault();
 		});
 	};
+	*/
 
 });
 
