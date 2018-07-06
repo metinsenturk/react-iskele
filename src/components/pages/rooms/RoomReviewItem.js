@@ -1,6 +1,7 @@
 import React from "react";
 
 const RoomReviewItem = props => {
+  const review = props.review;
   return (
     <li className="review">
       <div className="review__user">Maria Atkinson</div>

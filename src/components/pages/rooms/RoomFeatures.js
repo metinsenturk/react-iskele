@@ -2,32 +2,32 @@ import React from "react";
 
 const RoomFeatures = props => {
   return (
-    <div class="room_features__body">
-      <p class="subheading">Room features</p>
-      <ul class="room__features">
-        <li class="feature__item">
-          <i class="icon ion-android-people" />
-          <div class="feature_item__title">Double king bed</div>
+    <div className="room_features__body">
+      <p className="subheading">Odanın Özellikleri</p>
+      <ul className="room__features">
+        <li className="feature__item">
+          <i className="icon ion-android-people" />
+          <div className="feature_item__title">Çift Kişilik Yatak</div>
         </li>
-        <li class="feature__item">
-          <i class="icon ion-coffee" />
-          <div class="feature_item__title">Breakfast</div>
+        <li className="feature__item">
+          <i className="icon ion-coffee" />
+          <div className="feature_item__title">Kahvaltı Dahil</div>
         </li>
-        <li class="feature__item">
-          <i class="icon ion-android-sunny" />
-          <div class="feature_item__title">Air conditioning</div>
+        <li className="feature__item">
+          <i className="icon ion-android-sunny" />
+          <div className="feature_item__title">Klima</div>
         </li>
-        <li class="feature__item">
-          <i class="icon ion-wineglass" />
-          <div class="feature_item__title">Mini bar</div>
+        <li className="feature__item">
+          <i className="icon ion-wineglass" />
+          <div className="feature_item__title">Mini bar</div>
         </li>
-        <li class="feature__item">
-          <i class="icon ion-wifi" />
-          <div class="feature_item__title">Wi-Fi service</div>
+        <li className="feature__item">
+          <i className="icon ion-wifi" />
+          <div className="feature_item__title">Ücretsiz Wi-Fi</div>
         </li>
-        <li class="feature__item">
-          <i class="icon ion-model-s" />
-          <div class="feature_item__title">Free parking</div>
+        <li className="feature__item">
+          <i className="icon ion-model-s" />
+          <div className="feature_item__title">Ücretsiz Araç Parkı</div>
         </li>
       </ul>
     </div>

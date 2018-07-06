@@ -6,40 +6,8 @@ import RoomsItem from "./rooms/RoomsItem";
 import RoomDetail from "./rooms/RoomDetail";
 
 const RoomsHandler = props => {
-  const rooms = [
-    {
-      featureImage: "single_room.jpg",
-      featureImageAlt: "Tek Kişilik Oda Resmi",
-      roomName: "Tek Kişilik Oda",
-      roomSlug: "tek-kisilik-oda",
-      roomCurrency: "$",
-      roomPrice: "79",
-      roomPricePerInterval: "Gece",
-      roomDescription:
-        "Oda tek kişilıktir. Tek kişilik olmasına ragmen rahat ve geniştir."
-    },
-    {
-      featureImage: "double_room.jpg",
-      featureImageAlt: "Çift Kişilik Oda Resmi",
-      roomName: "Çift Kişilik Oda",
-      roomSlug: "cift-kisilik-oda",
-      roomCurrency: "$",
-      roomPrice: "99",
-      roomPricePerInterval: "Gece",
-      roomDescription:
-        "Oda çift kişilıktir. Hiç bir eksiklik hissetmeyeceksiniz."
-    },
-    {
-      featureImage: "",
-      featureImageAlt: "",
-      roomName: "",
-      roomSlug: "tek-kisilik-oda",
-      roomCurrency: "",
-      roomPrice: "",
-      roomPricePerInterval: "",
-      roomDescription: ""
-    }
-  ];
+  const rooms = props.rooms;
+
   return (
     <div>
       <Helmet
@@ -64,10 +32,10 @@ const RoomsHandler = props => {
         contentDescription="Odalarımızı eviniz gibi hissedin."
         breadcrumbCurrent="Odalar"
       />
-      <section class="section__rooms-1">
-        <div class="container">
-          <div class="row">
-            {rooms.map(roomItem => <RoomsItem room={roomItem} />)}
+      <section className="section__rooms-1">
+        <div className="container">
+          <div className="row">
+            {rooms.map(roomItem => <RoomsItem key={roomItem.roomSlug} room={roomItem} />)}
           </div>
         </div>
       </section>
@@ -76,11 +44,14 @@ const RoomsHandler = props => {
 };
 
 const Rooms = props => {
+  const contactInfo = props.contactInfo;
+  const rooms = props.rooms;
+
   return (
     <div>
       <Switch>
-        <Route exact path="/odalar" component={RoomsHandler} />
-        <Route path="/odalar/:room" component={RoomDetail} />
+        <Route exact path="/odalar" render={ props => ( <RoomsHandler rooms={rooms} /> ) } />
+        <Route path="/odalar/:roomslug" render={ (props) => ( <RoomDetail {...props} rooms={rooms} contactInfo={contactInfo} /> ) } />
       </Switch>
     </div>
   );
