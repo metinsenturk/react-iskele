@@ -2,6 +2,9 @@ import React from "react";
 import Helmet from "react-helmet";
 
 import Breadcrumb from "./Breadcrumb";
+import AboutInfo from "./about/AboutInfo";
+import Testimonials from "./about/Testimonials";
+import AboutServices from "./about/AboutServices";
 
 const About = props => (
   <div>
@@ -30,6 +33,9 @@ const About = props => (
       contentDescription="Assos, Sivrice ve İskele'ye eşit uzaklıkta bir Butik Otel. Aile İşletmesi. Bizi Tanıyın."
       breadcrumbCurrent="Hakkımızda"
     />
+    <AboutInfo />
+    <Testimonials />
+    <AboutServices />
   </div>
 );
 
