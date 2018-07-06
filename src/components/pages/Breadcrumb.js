@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Breadcrumb = (props) => {
     const backgroundStyle = {
-        backgroundImage: 'url(' + 'http://localhost:3000/assets/img/' + props.contentBackgroundImage + ')'
+        backgroundImage: "url(" + "http://localhost:3000/assets/img/" + props.contentBackgroundImage + ")"
     }
   return (
     <div>

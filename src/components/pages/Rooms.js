@@ -35,7 +35,9 @@ const RoomsHandler = props => {
       <section className="section__rooms-1">
         <div className="container">
           <div className="row">
-            {rooms.map(roomItem => <RoomsItem key={roomItem.roomSlug} room={roomItem} />)}
+            {rooms.map(roomItem => (
+              <RoomsItem key={roomItem.roomSlug} room={roomItem} />
+            ))}
           </div>
         </div>
       </section>
@@ -50,8 +52,23 @@ const Rooms = props => {
   return (
     <div>
       <Switch>
-        <Route exact path="/odalar" render={ props => ( <RoomsHandler rooms={rooms} /> ) } />
-        <Route path="/odalar/:roomslug" render={ (props) => ( <RoomDetail {...props} rooms={rooms} contactInfo={contactInfo} /> ) } />
+        <Route
+          exact
+          path="/odalar"
+          render={props => <RoomsHandler rooms={rooms} />}
+        />
+        <Route
+          path="/odalar/:roomslug"
+          render={props => (
+            <RoomDetail
+              {...props}
+              room={rooms.find(
+                room => room.roomSlug === props.match.params.roomslug
+              )}
+              contactInfo={contactInfo}
+            />
+          )}
+        />
       </Switch>
     </div>
   );

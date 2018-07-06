@@ -5,9 +5,8 @@ import RoomContactInfo from "./RoomContactInfo";
 
 const RoomDetail = props => {
   const contactInfo = props.contactInfo;
-  const room = props.rooms.filter(
-    item => item.roomSlug === props.match.params.roomslug
-  )[0];
+  console.log(props.room);
+  const room = props.room;
 
   return (
     <div>
