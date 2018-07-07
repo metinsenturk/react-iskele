@@ -27,11 +27,7 @@ const Contact = props => (
       contentDescription="Otelimiz veya Sivrice Koyu hakkında sorularınız varsa, bize aşağıdaki bilgilerden ulaşabilirsiniz."
       breadcrumbCurrent="İletişim"
     />
-    <ContactDetails
-      address={props.contactInfo.address}
-      phone={props.contactInfo.phone}
-      phone2={props.contactInfo.phone2}
-      email={props.contactInfo.email}
+    <ContactDetails contactInfo={props.contactInfo}      
     />
   </div>
 );

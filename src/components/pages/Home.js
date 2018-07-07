@@ -1,5 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
+import HomeContact from "./home/HomeContact";
 
 const Home = props => (
   <div>
@@ -17,6 +18,9 @@ const Home = props => (
         { property: "og:url", content: "https://iskelebutikhotel.com/" }
       ]}
     />
+    <a id="back-to-top" href="#section__home" class="btn btn-top back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left">
+	  	<i class="ion-android-arrow-up"></i>
+	  </a>
     <section className="section__home" id="section__home">
       <div className="container">
         <div className="row">
@@ -50,6 +54,7 @@ const Home = props => (
 
       <div className="home__bg" />
     </section>
+    <HomeContact contactInfo={props.contactInfo} />
   </div>
 );
 
