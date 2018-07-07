@@ -5,6 +5,7 @@ import Testimonials from "./about/Testimonials";
 import HomeFeatures from "./home/HomeFeatures";
 import HomeAbout from "./home/HomeAbout";
 import HomeRooms from "./home/HomeRooms";
+import HomeGallery from "./home/HomeGallery";
 
 const Home = props => (
   <div>
@@ -60,9 +61,10 @@ const Home = props => (
     </section>
     <HomeAbout />
     <HomeRooms rooms={props.rooms} />
+    <Testimonials />
+    <HomeGallery images={props.images} />
     <HomeFeatures hotelFeatures={props.hotelFeatures} />
     <HomeContact contactInfo={props.contactInfo} />
-    <Testimonials />
   </div>
 );
 

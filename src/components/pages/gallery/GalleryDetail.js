@@ -34,51 +34,7 @@ class GalleryDetail extends Component {
           name: "Otel Açık Alanı",
           isActive: false
         }
-      ],
-      images: [
-        {
-          class: "mutfak",
-          url: "gallery_img1.jpg",
-          alt: "",
-          caption: ""
-        },
-        {
-          class: "mutfak",
-          url: "gallery_img2.jpg",
-          alt: "",
-          caption: ""
-        },
-        {
-          class: "iskele",
-          url: "gallery_img3.jpg",
-          alt: "",
-          caption: ""
-        },
-        {
-          class: "bahce",
-          url: "gallery_img4.jpg",
-          alt: "",
-          caption: ""
-        },
-        {
-          class: "bahce",
-          url: "gallery_img5.jpg",
-          alt: "",
-          caption: ""
-        },
-        {
-          class: "acik-alan",
-          url: "gallery_img6.jpg",
-          alt: "",
-          caption: ""
-        },
-        {
-          class: "acik-alan",
-          url: "gallery_img7.jpg",
-          alt: "",
-          caption: ""
-        }
-      ]
+      ],      
     };
   }
 
@@ -130,7 +86,7 @@ class GalleryDetail extends Component {
 
   render() {
     const navItems = this.state.navItems;
-    const images = this.state.images;
+    const images = this.props.images;
 
     return (
       <section className="section__gallery-alt">

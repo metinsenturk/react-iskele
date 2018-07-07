@@ -28,7 +28,7 @@ const HomeRooms = props => {
       <div className="container">
         <div className="best-rooms__content">
           <div className="row">
-            {rooms.slice(0,2).map(room => <HomeRoomItem room={room} />)}
+            {rooms.slice(0,2).map((room, index) => <HomeRoomItem key={index} room={room} />)}
           </div>
           <div className="row">
             <div className="col-xs-12">
