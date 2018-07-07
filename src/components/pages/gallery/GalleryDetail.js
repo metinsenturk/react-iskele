@@ -82,52 +82,34 @@ class GalleryDetail extends Component {
     };
   }
 
-  handleHash() {
+  handleIsotope() {
     let hash = this.props.location.hash;
-    if (hash.length > 0) {
-      console.log(`I got ${hash}`);
-      let newItems = Object.assign(this.state.navItems);
-      console.log(newItems);
-      newItems.forEach(
-        item =>
-          `#${item.class}` === hash
-            ? (item.isActive = true)
-            : (item.isActive = false)
-      );
-
-      this.setState({
-        navItems: newItems
-      });
-    }
+    let element = document.getElementById("gallery__items");
+    let iso = new Isotope(element, {
+      itemSelector: ".gallery__item",
+      layoutMode: "masonry",
+      filter: (hash.length > 0) ? "." + hash.split("#")[1]: ".all"
+    })
+    imagesLoaded(element, function() {
+      iso.layout();
+    })
+    iso.reloadItems()
+    console.log(hash)
+    console.log(iso.getFilteredItemElements())
   }
 
   componentDidMount() {
-    console.log("no, only once!");
-    let elem = document.getElementById("gallery__items");
-
-    var iso = new Isotope(elem, {
-      itemSelector: ".gallery__item",
-      layoutMode: "masonry"
-    });
-
-    var imgLoad = imagesLoaded(elem);
-    imgLoad.on("progress", function(instance, image) {
-      iso.layout();
-    });
-
-    console.log(this.props);
-  }
-
-  componentDidUpdate(prevProps, nextState) {
-
+    console.log("did mounted")
+    this.handleIsotope();
   }
 
   componentWillUpdate(nextProps, nextState) {
-    console.log("will updated");
-    console.log(nextProps);
-    console.log(nextProps.location.hash);
-    console.log(nextState);
-    console.log(this.state.navItems);
+    console.log("will updated")
+    // TODO: if not to use nextState, how to update state?
+    /*
+     * I tried componentDidUpdate and could not used setState in it since I don't have any conditional to stop
+     * I tried handleClick function, which recieved prevProps in it during onClick event.
+     * */
     let hash = nextProps.location.hash;
     nextState.navItems.forEach(
         item =>
@@ -135,6 +117,11 @@ class GalleryDetail extends Component {
             ? (item.isActive = true)
             : (item.isActive = false)
       );
+  }
+
+  componentDidUpdate() {
+    console.log("did updated")
+    this.handleIsotope();
   }
 
   render() {

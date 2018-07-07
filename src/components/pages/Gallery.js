@@ -24,7 +24,7 @@ const Gallery = props => (
       contentDescription="Sizin için odaların, genel otel görünümünün, Sivrice Koyu'nun, Assos Sahilinin fotoğraflarını çektik."
       breadcrumbCurrent="Fotoğraflar"
     />
-    <GalleryDetail { ...props } activeHash={props.location.hash} />
+    <GalleryDetail { ...props } />
   </div>
 );
 
