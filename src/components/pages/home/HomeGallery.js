@@ -10,7 +10,7 @@ const HomeGallery = props => {
         <div className="row">
           <div className="col-sm-12">
             <h2 className="section__title">
-              Otel'in  <strong>Resimleri</strong>
+              Otel'in <strong>Resimleri</strong>
             </h2>
             <div className="divider">
               <hr className="line1" />
@@ -29,12 +29,18 @@ const HomeGallery = props => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-xs-12">
-            <div
-              id="gallery__carousel"
-              className="owl-carousel owl-theme gallery__body"
-            >
-              {images.slice(0,9).map((image, index) => <HomeGalleryItem key={index} image={image} />)}
-            </div>
+            {
+              <div
+                id="gallery__carousel"
+                className="owl-carousel owl-theme gallery__body"
+              >
+                {images
+                  .slice(0, 9)
+                  .map((image, index) => (
+                    <HomeGalleryItem key={index} image={image} />
+                  ))}
+              </div>
+            }
           </div>
         </div>
       </div>
@@ -45,5 +51,5 @@ const HomeGallery = props => {
 export default HomeGallery;
 
 HomeGallery.protoTypes = {
-    images: PropTypes.array.isRequired
+  images: PropTypes.array.isRequired
 };

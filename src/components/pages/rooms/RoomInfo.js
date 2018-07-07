@@ -1,28 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import { Carousel } from "react-responsive-carousel";
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 const RoomInfo = props => {
   const room = props.room;
 
   return (
     <div className="room_detail__body">
-      <div
-        id="room-detail__carousel"
-        className="owl-carousel owl-theme room-detail__gallery"
-      >
-      {room.images.map((image, index) => {
-        return (
-          <div className="room_gallery__item" key={index}>
+    <Carousel showThumbs={false} useKeyboardArrows={true} emulateTouch={true}>
+    {room.images.map((image, index) => <div className="room_gallery__item" key={index}>
           <img
-            src={"http://localhost:3000/assets/img/" + image.url}
+            src={"../assets/img/" + image.url}
             className="img-responsive"
             alt={image.alt}
           />
-          </div>
-        );
-      })}
-        
-      </div>
+          </div>)}
+    </Carousel>
       <div className="room_price__body">
         <h2 className="room__name">{room.roomName}</h2>
         <p className="room__price">

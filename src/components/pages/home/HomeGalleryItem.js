@@ -20,5 +20,5 @@ const HomeGalleryItem = props => (
 export default HomeGalleryItem;
 
 HomeGalleryItem.propTypes = {
-    image: PropTypes.object.isRequired
+  image: PropTypes.object.isRequired
 };
