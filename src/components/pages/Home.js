@@ -3,6 +3,8 @@ import Helmet from "react-helmet";
 import HomeContact from "./home/HomeContact";
 import Testimonials from "./about/Testimonials";
 import HomeFeatures from "./home/HomeFeatures";
+import HomeAbout from "./home/HomeAbout";
+import HomeRooms from "./home/HomeRooms";
 
 const Home = props => (
   <div>
@@ -20,17 +22,17 @@ const Home = props => (
         { property: "og:url", content: "https://iskelebutikhotel.com/" }
       ]}
     />
-    <a id="back-to-top" href="#section__home" class="btn btn-top back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left">
-	  	<i class="ion-android-arrow-up"></i>
+    <a id="back-to-top" href="#section__home" className="btn btn-top back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left">
+	  	<i className="ion-android-arrow-up"></i>
 	  </a>
     <section className="section__home" id="section__home">
       <div className="container">
         <div className="row">
           <div className="col-sm-12">
             <div className="welcome__content">
-              <h1 className="welcome_content__title">{props.hotel_name}</h1>
+              <h1 className="welcome_content__title">{props.profileInfo.name}</h1>
               <p className="welcome_content__title-primary">
-                {props.hotel_snag}
+                {props.profileInfo.snag}
               </p>
 
               <div className="divider">
@@ -56,6 +58,8 @@ const Home = props => (
 
       <div className="home__bg" />
     </section>
+    <HomeAbout />
+    <HomeRooms rooms={props.rooms} />
     <HomeFeatures hotelFeatures={props.hotelFeatures} />
     <HomeContact contactInfo={props.contactInfo} />
     <Testimonials />

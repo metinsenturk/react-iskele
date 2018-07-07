@@ -7,7 +7,7 @@ const HomeFeatures = (props) => {
         <section className="section__services">
     	<div className="container-fluid">
 		    <div className="row">
-					{homeFeaturesArray.map((homeFeature) => <HomeFeatureItem homeFeature={homeFeature} />)}
+					{homeFeaturesArray.map((homeFeature, index) => <HomeFeatureItem key={index} homeFeature={homeFeature} />)}
 		    </div> 
 	    </div> 
     </section>

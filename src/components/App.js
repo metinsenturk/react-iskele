@@ -135,7 +135,7 @@ class App extends Component {
             exact
             path="/"
             render={props => (
-              <Home hotel_name={ data.profileInfo.name } hotel_snag={ data.profileInfo.snag } contactInfo={data.contactInfo} hotelFeatures={data.hotelFeatures} />
+              <Home profileInfo={ data.profileInfo } contactInfo={data.contactInfo} hotelFeatures={data.hotelFeatures} rooms={data.rooms}/>
             )}
           />
           <Route path="/hakkimizda" render={ props => ( <About hotelFeatures={data.hotelFeatures} /> )} /> 

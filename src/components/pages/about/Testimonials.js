@@ -50,8 +50,8 @@ const Testimonials = props => {
               id="testimonials__carousel"
               className="owl-carousel owl-theme testimonials__body"
             >
-            {testimonials.map((testimonial) => (
-                <TestimonialItem testimonialItem={testimonial} />
+            {testimonials.map((testimonial, index) => (
+                <TestimonialItem key={index} testimonialItem={testimonial} />
             ))}
             </div>
           </div>
