@@ -8,8 +8,13 @@ const GalleryNav = props => {
     liClasses.push("active")
   }
   return (
-    <li href="#" role="presentation" className={ liClasses.join(" ")}>
-      <Link to={`/galeri#${navItem.class}`} data-filter={`.${navItem.class}`} onClick={props.handleClick}>
+    <li role="presentation" className={ liClasses.join(" ")}>
+      <Link to={
+        {
+          pathname: `/galeri`,
+          hash: `#${navItem.class}`
+        }
+        } data-filter={`.${navItem.class}`}>
       <span>{navItem.name}</span>
       </Link>
     </li>

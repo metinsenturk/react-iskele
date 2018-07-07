@@ -88,23 +88,31 @@ class GalleryDetail extends Component {
     let iso = new Isotope(element, {
       itemSelector: ".gallery__item",
       layoutMode: "masonry",
-      filter: (hash.length > 0) ? "." + hash.split("#")[1]: ".all"
-    })
+      hiddenStyle: {
+        opacity: 0
+      },
+      visibleStyle: {
+        opacity: 1
+      },
+      filter: hash.length > 0 ? "." + hash.split("#")[1] : ".all"
+    });
+
+    iso.reloadItems();
     imagesLoaded(element, function() {
       iso.layout();
-    })
-    iso.reloadItems()
-    console.log(hash)
-    console.log(iso.getFilteredItemElements())
+    });
+
+    console.log(hash);
+    console.log(iso.getFilteredItemElements());
   }
 
   componentDidMount() {
-    console.log("did mounted")
-    this.handleIsotope();
+    console.log("did mounted");
+    this.handleIsotope(this.props.location.hash);
   }
 
   componentWillUpdate(nextProps, nextState) {
-    console.log("will updated")
+    console.log("will updated");
     // TODO: if not to use nextState, how to update state?
     /*
      * I tried componentDidUpdate and could not used setState in it since I don't have any conditional to stop
@@ -112,16 +120,12 @@ class GalleryDetail extends Component {
      * */
     let hash = nextProps.location.hash;
     nextState.navItems.forEach(
-        item =>
-          `#${item.class}` === hash
-            ? (item.isActive = true)
-            : (item.isActive = false)
-      );
-  }
-
-  componentDidUpdate() {
-    console.log("did updated")
-    this.handleIsotope();
+      item =>
+        `#${item.class}` === hash
+          ? (item.isActive = true)
+          : (item.isActive = false)
+    );
+    this.handleIsotope(nextProps.location.hash);
   }
 
   render() {
@@ -151,11 +155,7 @@ class GalleryDetail extends Component {
             <div className="col-xs-12">
               <ul className="nav nav-tabs gallery__nav" role="tablist">
                 {navItems.map((navItem, index) => (
-                  <GalleryNav
-                    key={index}
-                    navItem={navItem}
-                    /*handleClick={this.handleHash.bind(this)}*/
-                  />
+                  <GalleryNav key={index} navItem={navItem} />
                 ))}
               </ul>
             </div>
