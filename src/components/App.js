@@ -90,6 +90,36 @@ class App extends Component {
           roomPricePerInterval: "",
           roomDescription: ""
         }
+      ],
+      hotelFeatures: [
+        {
+          featureName: "Ücretsiz Araç Parkı",
+          shortDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dolor magnam quas cumque.",
+          mediumDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi eaque, eum. Voluptates corporis tenetur commodi nihil velit perspiciatis natus fugit rerum nisi, at, voluptas autem quisquam reprehenderit odit dolores quas!",
+          icon: "ion-android-restaurant",
+          image: ""
+        },
+        {
+          featureName: "Plaj",
+          shortDescription: "",
+          mediumDescription: "",
+          icon: "ion-plane",
+          image: ""
+        },
+        {
+          featureName: "Restoran",
+          shortDescription: "",
+          mediumDescription: "",
+          icon: "ion-plane",
+          image: ""
+        },
+        {
+          featureName: "Restoran",
+          shortDescription: "",
+          mediumDescription: "",
+          icon: "ion-plane",
+          image: ""
+        }
       ]
     }
     
@@ -105,10 +135,10 @@ class App extends Component {
             exact
             path="/"
             render={props => (
-              <Home hotel_name={ data.profileInfo.name } hotel_snag={ data.profileInfo.snag } contactInfo={data.contactInfo} />
+              <Home hotel_name={ data.profileInfo.name } hotel_snag={ data.profileInfo.snag } contactInfo={data.contactInfo} hotelFeatures={data.hotelFeatures} />
             )}
           />
-          <Route path="/hakkimizda" component={About} />
+          <Route path="/hakkimizda" render={ props => ( <About hotelFeatures={data.hotelFeatures} /> )} /> 
           <Route path="/odalar" render={ props => ( <Rooms contactInfo={data.contactInfo} rooms={data.rooms} /> )} />          
           <Route path="/rezervasyon" component={Reservation} />
           <Route path="/galeri" component={Gallery} />

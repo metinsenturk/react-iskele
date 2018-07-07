@@ -26,22 +26,22 @@ const HomeContact = props => {
         ]
       };
   return (
-    <section class="section__contacts">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <h2 class="section__title">
+    <section className="section__contacts">
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-12">
+            <h2 className="section__title">
               <strong>Bizimle İletişime</strong> Geçin.
             </h2>
-            <div class="divider">
-              <hr class="line1" />
-              <hr class="line2" />
-              <hr class="line1" />
+            <div className="divider">
+              <hr className="line1" />
+              <hr className="line2" />
+              <hr className="line1" />
             </div>
           </div>
         </div>
       </div>
-      <div class="section_row">
+      <div className="section_row">
         <div style={{ width: "100%", height: "350px" }}>
           <GoogleMapReact
             bootstrapURLKeys={{
@@ -57,20 +57,20 @@ const HomeContact = props => {
           </GoogleMapReact>
         </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-5">
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-5">
             <ContactWidget
               address={props.contactInfo.address}
               phone={props.contactInfo.phone}
               phone2={props.contactInfo.phone2}
               email={props.contactInfo.email}
             />
-            <p class="subheading">
+            <p className="subheading">
               Rezervasyon veya sorularınız için bizi arayın.
             </p>
           </div>
-          <div class="col-sm-7">
+          <div className="col-sm-7">
             <ContactForm formName="HomePage"/>
           </div>
         </div>

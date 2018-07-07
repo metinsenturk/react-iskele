@@ -1,6 +1,8 @@
 import React from "react";
 import Helmet from "react-helmet";
 import HomeContact from "./home/HomeContact";
+import Testimonials from "./about/Testimonials";
+import HomeFeatures from "./home/HomeFeatures";
 
 const Home = props => (
   <div>
@@ -54,7 +56,9 @@ const Home = props => (
 
       <div className="home__bg" />
     </section>
+    <HomeFeatures hotelFeatures={props.hotelFeatures} />
     <HomeContact contactInfo={props.contactInfo} />
+    <Testimonials />
   </div>
 );
 

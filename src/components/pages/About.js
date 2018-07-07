@@ -35,7 +35,7 @@ const About = props => (
     />
     <AboutInfo />
     <Testimonials />
-    <AboutServices />
+    <AboutServices hotelFeatures={props.hotelFeatures} />
   </div>
 );
 

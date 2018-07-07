@@ -1,8 +1,16 @@
-import React from "react"
+import React from "react";
+import HomeFeatureItem from "./HomeFeatureItem";
 
 const HomeFeatures = (props) => {
+    const homeFeaturesArray = props.hotelFeatures;
     return (
-        <div></div>
+        <section className="section__services">
+    	<div className="container-fluid">
+		    <div className="row">
+					{homeFeaturesArray.map((homeFeature) => <HomeFeatureItem homeFeature={homeFeature} />)}
+		    </div> 
+	    </div> 
+    </section>
     );
 }
 
