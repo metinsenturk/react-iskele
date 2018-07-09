@@ -27,13 +27,13 @@ const AboutServices = props => {
           </div>
           <div className="col-sm-7">
             <div className="row">
-              {aboutServicesArray.slice(0,2).map(aboutSevice => 
-                <AboutServiceItem aboutSevice={aboutSevice} />
+              {aboutServicesArray.slice(0,2).map((aboutSevice, index) => 
+                <AboutServiceItem key={index} aboutSevice={aboutSevice} />
               )}
             </div>
             <div className="row">
-              {aboutServicesArray.slice(2,4).map(aboutSevice => (
-                <AboutServiceItem aboutSevice={aboutSevice} />
+              {aboutServicesArray.slice(2,4).map((aboutSevice, index) => (
+                <AboutServiceItem key={index} aboutSevice={aboutSevice} />
               ))}
             </div>
           </div>

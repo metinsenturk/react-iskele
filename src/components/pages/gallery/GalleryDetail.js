@@ -64,7 +64,7 @@ class GalleryDetail extends Component {
 
   componentDidMount() {
     console.log("did mounted");
-    this.handleIsotope(this.props.location.hash);
+    this.handleIsotope();
   }
 
   componentWillUpdate(nextProps, nextState) {
@@ -81,7 +81,7 @@ class GalleryDetail extends Component {
           ? (item.isActive = true)
           : (item.isActive = false)
     );
-    this.handleIsotope(nextProps.location.hash);
+    this.handleIsotope();
   }
 
   render() {

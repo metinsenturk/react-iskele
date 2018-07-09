@@ -204,7 +204,7 @@ class App extends Component {
           <Route path="/rezervasyon" component={Reservation} />
           <Route
             path="/galeri"
-            render={props => <Gallery images={data.images} />}
+            render={props => <Gallery {...props} images={data.images} />}
           />
           <Route
             path="/iletisim"
