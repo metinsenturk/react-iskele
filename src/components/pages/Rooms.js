@@ -1,6 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import Breadcrumb from "./Breadcrumb";
 import RoomsItem from "./rooms/RoomsItem";
 import RoomDetail from "./rooms/RoomDetail";
@@ -35,8 +35,8 @@ const RoomsHandler = props => {
       <section className="section__rooms-1">
         <div className="container">
           <div className="row">
-            {rooms.map(roomItem => (
-              <RoomsItem key={roomItem.roomSlug} room={roomItem} />
+            {rooms.map(room => (
+              <RoomsItem key={room.roomSlug} room={room} />
             ))}
           </div>
         </div>
@@ -59,16 +59,17 @@ const Rooms = props => {
         />
         <Route
           path="/odalar/:roomslug"
-          render={props => (
-            <RoomDetail
-              {...props}
-              room={rooms.find(
-                room => room.roomSlug === props.match.params.roomslug
-              )}
-              contactInfo={contactInfo}
-            />
-          )}
-        />
+          render={props => {
+            const room = rooms.find(
+              room => room.roomSlug === props.match.params.roomslug
+            );
+            if (room !== undefined) 
+              return <RoomDetail {...props} room={room} contactInfo={contactInfo} />
+            else 
+              return <Redirect to="/404/sayfa-bulunamadi" />
+            
+          }}
+        />}
       </Switch>
     </div>
   );

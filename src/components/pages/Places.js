@@ -1,5 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
+import { Redirect } from "react-router-dom";
 
 const Places = ({ match }) => {
   const urls = [
@@ -157,7 +158,7 @@ const Places = ({ match }) => {
       </div>
     );
   } else {
-    return <div>Sayfa bulunamadı.</div>;
+    return <Redirect from="*" to="/404/sayfa-bulunamadi" />;
   }
 };
 

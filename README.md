@@ -16,3 +16,11 @@ Since this website has not many user interactions, most of the components are st
 6. Implementation of Payment API
 
 Finally, there will be no database implementation in this project, the content will be publicly available once it is finish. 
+
+
+### July 10: Project Status
+
+All of the pages, except the Reservation is implemented. Below is the two known bugs in this project.
+
+1. Owl-Carousel is not runing on page changes. (Not implemented in React)
+2. Isotope is not implemented in react. Therefore, tabs in gallery not changing.

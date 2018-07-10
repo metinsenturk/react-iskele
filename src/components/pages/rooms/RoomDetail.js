@@ -1,13 +1,12 @@
-import React from "react";
 import RoomInfo from "./RoomInfo";
 import RoomFeatures from "./RoomFeatures";
 import RoomContactInfo from "./RoomContactInfo";
+import React from "react";
 
 const RoomDetail = props => {
   const contactInfo = props.contactInfo;
-  console.log(props.room);
   const room = props.room;
-
+  
   return (
     <div>
       <section className="section__text-header">

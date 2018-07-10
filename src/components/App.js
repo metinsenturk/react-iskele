@@ -10,6 +10,7 @@ import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import Places from "./pages/Places";
 import Reservation from "./pages/Reservation";
+import Page404 from "./pages/Page404";
 
 class App extends Component {
   render() {
@@ -211,6 +212,7 @@ class App extends Component {
             render={props => <Contact contactInfo={data.contactInfo} />}
           />
           <Route exact path="/:keyword" component={Places} />
+          <Route path="/404/:errorCode" render={props => <Page404 {...props} />} />          
         </Switch>
 
         <Footer
