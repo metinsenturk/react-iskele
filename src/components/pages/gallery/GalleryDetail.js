@@ -1,15 +1,26 @@
 import React, { Component } from "react";
 import GalleryNav from "./GalleryNav";
 import GalleryItem from "./GalleryItem";
-import GalleryGridSample from "./GalleryGridSample";
 
 class GalleryDetail extends Component {
   constructor(props) {
     super(props);
+
+    let currentTab = 1;
+    let images;
+    if (this.props.location.hash) {
+      let tab = this.props.navItems.filter(item => `#${item.class}` === this.props.location.hash)[0];
+      currentTab = tab.id;
+      images = tab.id === 1 ? this.props.images : this.props.images.filter(image => image.class === tab.class);
+      console.log(currentTab)
+    } else {
+      images = this.props.images;
+    }
+
     this.state = {
-      images: this.props.images,
+      images: images,
       navItems: this.props.navItems,
-      currentTab: 1
+      currentTab: currentTab
     };
   }
 
