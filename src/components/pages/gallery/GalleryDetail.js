@@ -1,92 +1,30 @@
 import React, { Component } from "react";
 import GalleryNav from "./GalleryNav";
 import GalleryItem from "./GalleryItem";
-import Isotope from "isotope-layout";
-import imagesLoaded from "imagesloaded";
+import GalleryGridSample from "./GalleryGridSample";
 
 class GalleryDetail extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      navItems: [
-        {
-          class: "all",
-          name: "Tüm Fotoğraflar",
-          isActive: true
-        },
-        {
-          class: "mutfak",
-          name: "Mutfak",
-          isActive: false
-        },
-        {
-          class: "iskele",
-          name: "İskele",
-          isActive: false
-        },
-        {
-          class: "bahce",
-          name: "Bahçe",
-          isActive: false
-        },
-        {
-          class: "acik-alan",
-          name: "Otel Açık Alanı",
-          isActive: false
-        }
-      ],      
+      images: this.props.images,
+      navItems: this.props.navItems,
+      currentTab: 1
     };
   }
 
-  handleIsotope() {
-    let hash = this.props.location.hash;
-    let element = document.getElementById("gallery__items");
-    let iso = new Isotope(element, {
-      itemSelector: ".gallery__item",
-      layoutMode: "masonry",
-      hiddenStyle: {
-        opacity: 0
-      },
-      visibleStyle: {
-        opacity: 1
-      },
-      filter: hash.length > 0 ? "." + hash.split("#")[1] : ".all"
-    });
-
-    iso.reloadItems();
-    imagesLoaded(element, function() {
-      iso.layout();
-    });
-
-    console.log(hash);
-    console.log(iso.getFilteredItemElements());
-  }
-
-  componentDidMount() {
-    console.log("did mounted");
-    this.handleIsotope();
-  }
-
-  componentWillUpdate(nextProps, nextState) {
-    console.log("will updated");
-    // TODO: if not to use nextState, how to update state?
-    /*
-     * I tried componentDidUpdate and could not used setState in it since I don't have any conditional to stop
-     * I tried handleClick function, which recieved prevProps in it during onClick event.
-     * */
-    let hash = nextProps.location.hash;
-    nextState.navItems.forEach(
-      item =>
-        `#${item.class}` === hash
-          ? (item.isActive = true)
-          : (item.isActive = false)
-    );
-    this.handleIsotope();
+  handleClick(tab) {
+    const images = this.props.images;
+    let selected = tab.id === 1 ? images : images.filter(image => image.class === tab.class);
+    this.setState({
+      images: selected,
+      currentTab: tab.id
+    })
   }
 
   render() {
     const navItems = this.state.navItems;
-    const images = this.props.images;
+    const images = this.state.images;
 
     return (
       <section className="section__gallery-alt">
@@ -111,7 +49,12 @@ class GalleryDetail extends Component {
             <div className="col-xs-12">
               <ul className="nav nav-tabs gallery__nav" role="tablist">
                 {navItems.map((navItem, index) => (
-                  <GalleryNav key={index} navItem={navItem} />
+                  <GalleryNav
+                    key={index}
+                    navItem={navItem}
+                    isCurrent={this.state.currentTab === navItem.id}
+                    handleClick={this.handleClick.bind(this, navItem)}
+                  />
                 ))}
               </ul>
             </div>
@@ -128,4 +71,35 @@ class GalleryDetail extends Component {
     );
   }
 }
+
+GalleryDetail.defaultProps = {
+  navItems: [
+    {
+      class: "all",
+      name: "Tüm Fotoğraflar",
+      id: 1
+    },
+    {
+      class: "mutfak",
+      name: "Mutfak",
+      id: 2
+    },
+    {
+      class: "iskele",
+      name: "İskele",
+      id: 3
+    },
+    {
+      class: "bahce",
+      name: "Bahçe",
+      id: 4
+    },
+    {
+      class: "acik-alan",
+      name: "Otel Açık Alanı",
+      id: 5
+    }
+  ]
+};
+
 export default GalleryDetail;
