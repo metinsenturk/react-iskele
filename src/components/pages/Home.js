@@ -57,7 +57,9 @@ const Home = props => (
         </div>
       </div>
 
-      <div className="home__bg" />
+      <div className="home__bg" style={{
+        backgroundImage: "url(" + "../assets/img/" + "genel/genel-5.jpg" + ")"
+      }} />
     </section>
     <HomeAbout />
     <HomeRooms rooms={props.rooms} />

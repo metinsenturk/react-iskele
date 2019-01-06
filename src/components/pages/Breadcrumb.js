@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Breadcrumb = (props) => {
     const backgroundStyle = {
         // eslint-disable-next-line
-        backgroundImage: "url(" + "http://localhost:3000/assets/img/" + props.contentBackgroundImage + ")"
+        backgroundImage: "url(" + "../assets/img/" + props.contentBackgroundImage + ")"
     }
   return (
     <div>

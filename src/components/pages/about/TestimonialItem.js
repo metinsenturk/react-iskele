@@ -6,13 +6,13 @@ const TestimonialItem = props => {
   return (
     <div className="testimonials__wrapper">
       <div className="testimonials__item">
-        <div className="testimonials__img">
+        {/*<div className="testimonials__img">
           <img
             className="img-responsive"
             src={"http://localhost:3000/assets/img/" + testimonialItem.image.url}
             alt={testimonialItem.image.alt}
           />
-        </div>
+        </div>*/}
         <div className="testimonials__caption">
           <h3 className="testimonials_caption__name">
             {testimonialItem.fullName}

@@ -27,7 +27,7 @@ const RoomsHandler = props => {
         ]}
       />
       <Breadcrumb
-        contentBackgroundImage="rooms_bg.jpg"
+        contentBackgroundImage="sayfabaslik-oda.jpg"
         contentTitle="Sivrice Koyundaki en Konforlu Odalar"
         contentDescription="Odalarımızı eviniz gibi hissedin."
         breadcrumbCurrent="Odalar"

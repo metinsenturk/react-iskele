@@ -16,7 +16,7 @@ class App extends Component {
   render() {
     const data = {
       profileInfo: {
-        name: "İskele Butik Otel",
+        name: "İskele Otel",
         snag: "Bektaş Köyü"
       },
       contactInfo: {
@@ -28,21 +28,65 @@ class App extends Component {
       },
       rooms: [
         {
-          featureImage: "single_room.jpg",
+          featureImage: "room-1/iskele-1.jpg",
           featureImageAlt: "Tek Kişilik Oda Resmi",
           images: [
             {
-              url: "gallery_img1.jpg",
+              url: "room-1/iskele-1.jpg",
               alt: ""
             },
             {
-              url: "gallery_img2.jpg",
+              url: "room-1/iskele-2.jpg",
               alt: ""
             },
             {
-              url: "single_room.jpg",
+              url: "room-1/iskele-3.jpg",
               alt: ""
-            }
+            },
+            {
+              url: "room-1/iskele-4.jpg",
+              alt: ""
+            },
+            {
+              url: "room-1/iskele-5.jpg",
+              alt: ""
+            },
+            {
+              url: "room-1/iskele-6.jpg",
+              alt: ""
+            },
+            {
+              url: "room-1/iskele-7.jpg",
+              alt: ""
+            },
+            {
+              url: "room-1/iskele-8.jpg",
+              alt: ""
+            },
+            {
+              url: "room-1/iskele-9.jpg",
+              alt: ""
+            },
+            {
+              url: "room-1/iskele-10.jpg",
+              alt: ""
+            },
+            {
+              url: "room-1/iskele-11.jpg",
+              alt: ""
+            },
+            {
+              url: "room-1/iskele-12.jpg",
+              alt: ""
+            },
+            {
+              url: "room-1/iskele-13.jpg",
+              alt: ""
+            },
+            {
+              url: "room-1/iskele-14.jpg",
+              alt: ""
+            },
           ],
           roomName: "Tek Kişilik Oda",
           roomSlug: "tek-kisilik-oda",
@@ -57,13 +101,101 @@ class App extends Component {
             valley teems with vapour around me and the meridian.`
         },
         {
-          featureImage: "double_room.jpg",
+          featureImage: "room-2/iskele-8.jpg",
           featureImageAlt: "Çift Kişilik Oda Resmi",
           images: [
             {
-              url: "",
+              url: "room-2/iskele-1.jpg",
               alt: ""
-            }
+            },
+            {
+              url: "room-2/iskele-2.jpg",
+              alt: ""
+            },
+            {
+              url: "room-2/iskele-3.jpg",
+              alt: ""
+            },
+            {
+              url: "room-2/iskele-4.jpg",
+              alt: ""
+            },
+            {
+              url: "room-2/iskele-5.jpg",
+              alt: ""
+            },
+            {
+              url: "room-2/iskele-6.jpg",
+              alt: ""
+            },
+            {
+              url: "room-2/iskele-7.jpg",
+              alt: ""
+            },
+            {
+              url: "room-2/iskele-8.jpg",
+              alt: ""
+            },
+            {
+              url: "room-2/iskele-9.jpg",
+              alt: ""
+            },
+            {
+              url: "room-2/iskele-10.jpg",
+              alt: ""
+            },
+            {
+              url: "room-2/iskele-11.jpg",
+              alt: ""
+            },
+            {
+              url: "room-2/iskele-12.jpg",
+              alt: ""
+            },
+            {
+              url: "room-2/iskele-13.jpg",
+              alt: ""
+            },
+            {
+              url: "room-2/iskele-14.jpg",
+              alt: ""
+            },
+            {
+              url: "room-2/iskele-15.jpg",
+              alt: ""
+            },
+            {
+              url: "room-2/iskele-16.jpg",
+              alt: ""
+            },
+            {
+              url: "room-2/iskele-17.jpg",
+              alt: ""
+            },
+            {
+              url: "room-2/iskele-18.jpg",
+              alt: ""
+            },
+            {
+              url: "room-2/iskele-19.jpg",
+              alt: ""
+            },
+            {
+              url: "room-2/iskele-20.jpg",
+              alt: ""
+            },
+            {
+              url: "room-2/iskele-21.jpg",
+              alt: ""
+            },
+            {
+              url: "room-2/iskele-22.jpg",
+              alt: ""
+            },
+            {
+              url: "room-2/iskele-23.jpg",
+              alt: ""
+            },
           ],
           roomName: "Çift Kişilik Oda",
           roomSlug: "cift-kisilik-oda",
@@ -73,7 +205,7 @@ class App extends Component {
           roomDescription:
             "Oda çift kişilıktir. Hiç bir eksiklik hissetmeyeceksiniz."
         },
-        {
+        /*{
           featureImage: "",
           featureImageAlt: "",
           images: [
@@ -88,7 +220,7 @@ class App extends Component {
           roomPrice: "",
           roomPricePerInterval: "",
           roomDescription: ""
-        }
+        }*/
       ],
       hotelFeatures: [
         {

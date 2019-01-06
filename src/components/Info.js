@@ -19,9 +19,9 @@ const Info = (props) => (
         </div>
         <div className="info__column-right">
           <Social 
-          url_twitter="http://twitter.com/iskelebutikhotel"
-          url_fb="http://fb.com/iskelebutikhotel"
-          url_instagram="http://instagram.com/iskelebutikhotel" />
+          url_twitter="http://twitter.com/iskeleoteli"
+          url_fb="http://fb.com/iskeleoteli"
+          url_instagram="http://instagram.com/iskeleoteli" />
           <div className="dropdown lang-menu">
             <button
               className="dropdown-toggle"
