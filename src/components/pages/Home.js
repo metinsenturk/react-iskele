@@ -43,7 +43,7 @@ const Home = props => (
               </div>
 
               <p className="welcome_content__desc">
-                Çok yakında, hizmetinizde..
+              Assos bölgesinde, Bektaş Köyü’nün sahilinde, 7 dönüm zeytinlik arazısının içinde İskele Otel ile sakinliğe kavuşacaksınız. 
               </p>
 
               <a

@@ -4,9 +4,9 @@ import TestimonialItem from "./TestimonialItem";
 const Testimonials = props => {
   const testimonials = [
     {
-      fullName: "Metin Senturk",
-      profession: "İşci",
-      testimonial: "Çok beğendik.",
+      fullName: "Kemal Dorukan",
+      profession: "Ekim, 2018",
+      testimonial: `Çok tatlı bir aile işletmesi. Denize yakınlığıyla bizi tavladı. Huzurlu ve sakin bir alanda yer almakta ve geceleri tüm yıldızları sayabiliceğiniz kadar temiz bir havası var.`,
       image: {
         url: "testimonials_img1.jpg",
         alt: ""
@@ -14,9 +14,19 @@ const Testimonials = props => {
       dateCreated: new Date()
     },
     {
-        fullName: "Elif Çelebi",
-        profession: "Hemşire",
-        testimonial: "Çok güzeldi.",
+        fullName: "Sevil Evcimen",
+        profession: "Ağustos, 2018",
+        testimonial: "Yaz vakti ailemle geçirebileceğim en güzel tatili yaşadım. Öncelikle belirtmeliyim ki asos gelip de görmeniz gereken bir yer. Tarihi kimliği ve mükkemmel plajıyla günümüzü doldurdu. Herkese tavsiye ederim.",
+        image: {
+          url: "testimonials_img2.jpg",
+          alt: ""
+        },
+        dateCreated: new Date()
+      },
+      {
+        fullName: "Ayşegül Soydan",
+        profession: "Eylül, 2018",
+        testimonial: `Gayet başarılı bir aile işletmesi. Zengin mutfağıyla Neriman ablanın otelinden başka bir yerde yemeği düşünmessiniz. Temiz, düzenli ve sakinliğiyle iskele otel yeniden gelmek istediğim bir yer.`,
         image: {
           url: "testimonials_img2.jpg",
           alt: ""

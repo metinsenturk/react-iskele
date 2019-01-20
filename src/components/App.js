@@ -93,12 +93,7 @@ class App extends Component {
           roomCurrency: "$",
           roomPrice: "79",
           roomPricePerInterval: "Gece",
-          roomDescription: `A wonderful serenity has taken possession of my entire soul, like these
-            sweet mornings of spring which I enjoy with my whole heart. I am alone,
-            and feel the charm of existence in this spot, which was created for the
-            bliss of souls like mine. I am so happy, my dear friend, so absorbed in
-            the exquisite sense of mere tranquil existence. When, while the lovely
-            valley teems with vapour around me and the meridian.`
+          roomDescription: `20 metrekare genişliğinde, balkonlu bir odadır.`
         },
         {
           featureImage: "room-2/iskele-8.jpg",
@@ -203,7 +198,9 @@ class App extends Component {
           roomPrice: "99",
           roomPricePerInterval: "Gece",
           roomDescription:
-            "Oda çift kişilıktir. Hiç bir eksiklik hissetmeyeceksiniz."
+            `Odamız 40 metrekareden oluşur. İçinde çift kişilik ve bir adet tek kişilik yatak
+            mevcut. Genzi ve ferah olan odanın 2 büyük balkonu da vardır. Geniş odanızda
+            deniz ve güzel kokulu çiçeklerin keyfini çıkartabilirsiniz.`
         },
         /*{
           featureImage: "",
@@ -226,31 +223,31 @@ class App extends Component {
         {
           featureName: "Ücretsiz Araç Parkı",
           shortDescription:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dolor magnam quas cumque.",
+            "Aracınızla yaptığınız seyahatlerinizde aklınız arabanızda kalmasın. Otelin içerisinde aracınızı park edin..",
           mediumDescription:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi eaque, eum. Voluptates corporis tenetur commodi nihil velit perspiciatis natus fugit rerum nisi, at, voluptas autem quisquam reprehenderit odit dolores quas!",
-          icon: "ion-android-restaurant",
+            "Geniş bir arazı içinde bulunan otelimizin bahçesinde araçlarınız için park sorunu olmaz. Araç otoparkını otelimizin ve restorantımızın tüm müşterileri ücretisiz kullanabilir",
+          /*icon: "ion-ios-car",*/
           image: ""
         },
         {
           featureName: "Plaj",
           shortDescription: "",
-          mediumDescription: "",
-          icon: "ion-plane",
+          mediumDescription: "Plajımız temiz, minik volkanik çakıl taşlarından oluşur. Büyük iskelesi ile berrak suyun tadini çıkartabilirsiniz.",
+          /*icon: "ion-plane",*/
           image: ""
         },
         {
           featureName: "Restoran",
           shortDescription: "",
-          mediumDescription: "",
-          icon: "ion-plane",
+          mediumDescription: "İskele Otel restoranı büyük bahçemizin girişinde olup, çiçekler ve küçük ağaçların içinde bahçede hizmet vermektedir. ",
+          /*icon: "ion-plane",*/
           image: ""
         },
         {
-          featureName: "Restoran",
+          featureName: "Yaz Bahçesi",
           shortDescription: "",
-          mediumDescription: "",
-          icon: "ion-plane",
+          mediumDescription: "Zeytin ağaçları başta olmak üzere otel alanı içerisindeki yeşil alanın tadını çıkarın. Sabah kahvaltısında yiyeceğiniz yeşilliklerin geldiği bahçemizi keşfedin.",
+          /*icon: "ion-plane",*/
           image: ""
         }
       ],

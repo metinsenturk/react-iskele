@@ -8,7 +8,7 @@ const HomeAbout = props => {
         <div className="row">
           <div className="col-sm-12">
             <h2 className="section__title">
-              <strong>İskele Butik Otel</strong> 'e Hoşgeldiniz
+              <strong>İskele Otel</strong>, Yeşilin ve Mavinin Adresi
             </h2>
             <div className="divider">
               <hr className="line1" />
@@ -34,24 +34,31 @@ const HomeAbout = props => {
               <div className="about__desc">
                 <p className="about_desc__subtitle">Hakkımızda</p>
                 <h3 className="about_desc__title">
-                  Probably the best place to enjoy your life
+                  Yeşil ve mavinin bir arada olduğu huzura dolabileceğiniz
+                  denize 60 metre uzaklığı ile manzaranın keyfini
+                  çıkarabileceğiniz bir otel.
                 </h3>
                 <p className="about_desc__desc">
-                  A wonderful serenity has taken possession of my entire soul,
-                  like these sweet mornings of spring which I enjoy with my
-                  whole heart. I am alone, and feel the charm of existence in
-                  this spot, which was created for the bliss of souls like mine.
-                  I am so happy, my dear friend, so absorbed in the exquisite
-                  sense of mere tranquil existence. When, while the lovely
-                  valley teems with vapour around me, and the meridian sun
-                  strikes the upper surface of the impenetrable foliage of my
-                  trees, and but a few stray gleams steal into the inner
-                  sanctuary.
+                  İskele Otel, kargaşa ve kitle turuzminden uzak, sessiz ve
+                  huzurlu ortamında misafirlerimize en sıcak ve içten tatili
+                  sunar. Deniz ve plaj keyfinin yanında bölgenin mütiş
+                  coğrafyasında doğa yürüyüşleri, antik kent Assos,
+                  Gülpınar’daki Apollon Smintheus Tapınağını ziyaret edebilir.
+                  Yakındaki balıkçı limanı Babakale’de taze balıkçıların keyfini
+                  çıkarabilirsiniz.
+                  <br />
+                  <br />
+                  Doğal hayatı ve doğal üretimi hayamızın temeline kaydettik.
+                  Otelimizin arka bahçesinde yetiştirdiğimiz sebze ve meyveler
+                  ile İskele Otel’de anne eli değmiş doğanın içinde muhteşem
+                  yemekleri kuş ve ağustos böceklerinin sesleri eşliğinde,
+                  geceleri adaların ışıkları ve gökyüzünde görebileceğiniz en
+                  parlak yıldızlarla yemeğinizi yiyebilirsiniz.
                 </p>
                 <h4 className="about_desc__quote">
-                  The European languages are members of the same family. Their
-                  separate existence is a myth. For science, music, sport, etc,
-                  Europe uses the same vocabulary.
+                  İskele Otel Midilli Adasına 6 mil uzaklıktadır. Otelimiz
+                  Assos’a 20 km, Edremit Kocaseyit Havaalanına 80 km, Çanakkale
+                  Havaalanına 110 km uzaklıktadır.
                 </h4>
 
                 <Link to="/hakkimizda" className="btn btn-default">

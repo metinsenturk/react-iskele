@@ -18,9 +18,9 @@ const HomeRooms = props => {
               <hr className="line1" />
             </div>
             <p className="section__subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
-              sit dicta quae natus quasi ratione quis id, tenetur atque
-              blanditiis.
+            İskele Otel toplam 7 odadan oluşan küçük şirin bir oteldir. Tüm odalarımız
+deniz ve doğa manzaralı olup, ferah ve huzur içerir. Her odanın geniş çiçeklerde
+süslü balkonları mevcut.
             </p>
           </div>
         </div>

@@ -10,7 +10,7 @@ const HomeGallery = props => {
         <div className="row">
           <div className="col-sm-12">
             <h2 className="section__title">
-              Otel'in <strong>Resimleri</strong>
+              Resimlerle <strong>İskele Otel</strong>
             </h2>
             <div className="divider">
               <hr className="line1" />
@@ -18,10 +18,7 @@ const HomeGallery = props => {
               <hr className="line1" />
             </div>
             <p className="section__subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
-              sit dicta quae natus quasi ratione quis id, tenetur atque
-              blanditiis aperiam mollitia enim corporis ex praesentium
-              reprehenderit.
+              Otelimiz 7 dönüm arazi üzerine kurulmuş olup denize 60 metre uzaklıktadır. Otelimizde sizlere en iyi şekilde hizmet verebilmek için restoran, oda servisi, otopark, plaj, iskele başta olmak üzere en iyi şekilde hazırlamaktayız.
             </p>
           </div>
         </div>
