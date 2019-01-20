@@ -223,7 +223,7 @@ class App extends Component {
         {
           featureName: "Ücretsiz Araç Parkı",
           shortDescription:
-            "Aracınızla yaptığınız seyahatlerinizde aklınız arabanızda kalmasın. Otelin içerisinde aracınızı park edin..",
+            "Aracınızla yaptığınız seyahatlerinizde aklınız arabanızda kalmasın. Otelin içerisinde aracınızı park edin...",
           mediumDescription:
             "Geniş bir arazı içinde bulunan otelimizin bahçesinde araçlarınız için park sorunu olmaz. Araç otoparkını otelimizin ve restorantımızın tüm müşterileri ücretisiz kullanabilir",
           /*icon: "ion-ios-car",*/
@@ -231,21 +231,21 @@ class App extends Component {
         },
         {
           featureName: "Plaj",
-          shortDescription: "",
+          shortDescription: "Berrak suyun tadını çıkarabileceğiniz güzel bir plaj...",
           mediumDescription: "Plajımız temiz, minik volkanik çakıl taşlarından oluşur. Büyük iskelesi ile berrak suyun tadini çıkartabilirsiniz.",
           /*icon: "ion-plane",*/
           image: ""
         },
         {
           featureName: "Restoran",
-          shortDescription: "",
+          shortDescription: "Zengin menüsüyle yerel tatları sizlere sunuyor...",
           mediumDescription: "İskele Otel restoranı büyük bahçemizin girişinde olup, çiçekler ve küçük ağaçların içinde bahçede hizmet vermektedir. ",
           /*icon: "ion-plane",*/
           image: ""
         },
         {
           featureName: "Yaz Bahçesi",
-          shortDescription: "",
+          shortDescription: "Zeytin ağaçları, domates ve salatalık bahçesi ve dahası...",
           mediumDescription: "Zeytin ağaçları başta olmak üzere otel alanı içerisindeki yeşil alanın tadını çıkarın. Sabah kahvaltısında yiyeceğiniz yeşilliklerin geldiği bahçemizi keşfedin.",
           /*icon: "ion-plane",*/
           image: ""
