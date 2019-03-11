@@ -27,6 +27,7 @@ Reservation updated to FB booking. Old email, phone, etc. information updated. B
 1. SEO still missing
 2. owlCarousel like modules still not loading after ComponentDidMount.
 3. local pages content missing.
+4. netlify forms not functional, possibly react dynamic pages.
 
 ### July 10, 2018 - All pages implemented
 
