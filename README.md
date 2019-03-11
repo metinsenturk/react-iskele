@@ -20,6 +20,14 @@ Finally, there will be no database implementation in this project, the content w
 
 ## Project Status
 
+### March 10, 2019 - Information Updates and Few Fixes
+
+Reservation updated to FB booking. Old email, phone, etc. information updated. Broken links fixed.
+
+1. SEO still missing
+2. owlCarousel like modules still not loading after ComponentDidMount.
+3. local pages content missing.
+
 ### July 10, 2018 - All pages implemented
 
 All of the pages, except the Reservation is implemented. Below is the two known bugs in this project.

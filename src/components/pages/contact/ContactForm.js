@@ -8,9 +8,7 @@ const ContactForm = (props) => {
               <div className="alert" id="form_message" role="alert" />
 
               <form
-                id="contact__form"
                 className="contacts__form"
-                method="POST"
                 data-netlify="true"
                 data-netlify-recaptcha="true"
                 name={props.formName}

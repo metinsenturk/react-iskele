@@ -41,6 +41,7 @@ const Footer = props => (
               </div>
             </div>
             <div className="col-xs-7">
+              {/*
               <div className="footer__item">
                 <ul className="footer__links">
                   <li>
@@ -60,7 +61,9 @@ const Footer = props => (
                   </li>
                 </ul>
               </div>
-            </div>
+            
+              */}
+              </div>
           </div>
           <div className="col-xs-12 col-sm-4 col-md-3">
             <div className="footer__item">
@@ -72,11 +75,9 @@ const Footer = props => (
               <div id="mc_embed_signup">
                 <form
                   className="newsletter__form validate"
-                  method="POST"
-                  action="https://script.google.com/macros/s/AKfycbziALJoJ-PKXiY86x3ELEh0ALfenpBguio5TOGFLITnYXXa9DBK/exec"
-                  id="mc-embedded-subscribe-form"
-                  name="mc-embedded-subscribe-form"
-                  target="_blank"
+                  data-netlify="true"
+                  data-netlify-recaptcha="true"
+                  name="subscribe-form"
                 >
                   <div id="mc_embed_signup_scroll">
                     <div className="mc-field-group form-group">
@@ -85,30 +86,15 @@ const Footer = props => (
                       </label>
                       <input
                         type="email"
-                        value={props.email}
-                        name="EMAIL"
                         className="required email form-control newsletter_input"
-                        id="mce-EMAIL"
                         placeholder="Eposta adresiniz"
                       />
                     </div>
-                    <div id="mce-responses" className="clear">
-                      <div className="response" />
-                      <div className="response" id="mce-success-response" />
-                    </div>
-                    <div aria-hidden="true" id="mce-hidden-input">
-                      <input
-                        type="text"
-                        name="b_507744bbfd1cc2879036c7780_4523d25e1b"
-                        tabIndex="-1"
-                        value=""
-                      />
-                    </div>
+                    
                     <div className="clear">
                       <button
                         type="submit"
                         className="btn btn-default btn-newsletter"
-                        id="mc-embedded-subscribe"
                       >
                         <i className="icon ion-paper-airplane" />
                       </button>
@@ -125,7 +111,7 @@ const Footer = props => (
           <div className="col-xs-12">
             <hr />
             <p className="footer_copyright__text">
-              &#169; 2019 İskele Butik Otel. Tüm Hakları Saklıdır.
+              &#169; 2019 İskele Otel. Tüm Hakları Saklıdır.
             </p>
           </div>
         </div>
