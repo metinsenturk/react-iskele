@@ -21,9 +21,9 @@ class App extends Component {
       },
       contactInfo: {
         address: "İskele Koyu, Ayvacık, Çanakkale",
-        phone: "+90 (543) 344-9978",
+        phone: "+90 (545) 452-0978",
         phone2: "+90 (543) 344-9978",
-        email: "info@iskelebutikhotel.com",
+        email: "info@iskeleotel.com",
         email2: ""
       },
       rooms: [

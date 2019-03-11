@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, withRouter } from "react-router-dom";
 import App from "./components/App";
 import registerServiceWorker from "./registerServiceWorker";
-import "./index.css";
 
 class ScrollToTop extends React.Component {
   componentDidUpdate() {

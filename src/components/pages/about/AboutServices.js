@@ -12,8 +12,7 @@ const AboutServices = props => {
               Butik Otel <strong>Hizmetlerimiz</strong>
             </h2>
             <p className="services__text">
-              Li Europan lingues es membres del sam familie. Lor separat
-              existentie es un myth. Por scientie, musica, sport etc.
+              Otelimizde konaklamanız esnasında ihtiyacınız olabiliecek birçok hizmet sunuyoruz.
             </p>
             <div className="services__img">
               <a href="#services__modal" data-toggle="modal">

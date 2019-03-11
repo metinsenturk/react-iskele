@@ -10,8 +10,8 @@ import HomeGallery from "./home/HomeGallery";
 const Home = props => (
   <div>
     <Helmet
-      title="İskele Butik Otel"
-      link={[{ rel: "canonical", href: "https://iskelebutikhotel.com/" }]}
+      title="İskele Otel"
+      link={[{ rel: "canonical", href: "https://iskeleotel.com/" }]}
       meta={[
         {
           name: "description",
@@ -19,8 +19,8 @@ const Home = props => (
             "Behram Köyü'nün İskele Koyu'nda yer alan, denizin yanında aile sıcaklığında bir butik otel. Dahası, yerel yemekleriyle, zeytin bahçesiyle ve zengin doğal güzellikleriyle assos'taki eviniz."
         },
         { property: "og:type", content: "website" },
-        { property: "og:title", content: "İskele Butik Otel" },
-        { property: "og:url", content: "https://iskelebutikhotel.com/" }
+        { property: "og:title", content: "İskele Otel" },
+        { property: "og:url", content: "https://iskeleotel.com/" }
       ]}
     />
     <a id="back-to-top" href="#section__home" className="btn btn-top back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left">
@@ -47,10 +47,12 @@ const Home = props => (
               </p>
 
               <a
-                href="http://fb.me/iskelebutikhotel"
+                href="https://fb.com/iskeleoteli/book/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn-reservation"
               >
-                Facebook'tan takip et
+                Facebook ile Rezervasyon Yap
               </a>
             </div>
           </div>
@@ -58,7 +60,7 @@ const Home = props => (
       </div>
 
       <div className="home__bg" style={{
-        backgroundImage: "url(" + "../assets/img/" + "genel/genel-5.jpg" + ")"
+        backgroundImage: "url(../assets/img/genel/genel-5.jpg)"
       }} />
     </section>
     <HomeAbout />

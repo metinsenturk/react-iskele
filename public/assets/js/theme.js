@@ -157,7 +157,7 @@ var alert = (function() {
 /**
  * Newsletter
  */
-
+/** leaving form to netlify 
 var newsletter = (function() {
 
     // Variables
@@ -203,7 +203,7 @@ var newsletter = (function() {
         e.preventDefault();
     });
 })();
-
+*/
 
 
 $(function() {

@@ -12,6 +12,7 @@ const ContactForm = (props) => {
                 className="contacts__form"
                 method="POST"
                 data-netlify="true"
+                data-netlify-recaptcha="true"
                 name={props.formName}
               >
                 <div className="form-group">
@@ -61,7 +62,7 @@ const ContactForm = (props) => {
                     * Tüm alanlar zorunludur.
                   </small>
                 </div>
-                <div data-netlify-recaptcha />
+                <div data-netlify-recaptcha="true" />
                 <button type="submit" className="btn btn-default">
                   Gönder
                 </button>

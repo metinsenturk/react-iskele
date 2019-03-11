@@ -50,20 +50,19 @@ const Nav = props => {
                     <Link to="/odalar">Tüm Odalar</Link>
                   </li>
                   <li>
-                    <Link to="/odalar/1">Oda 1</Link>
+                    <Link to="/odalar/tek-kisilik-oda">Suit Oda</Link>
                   </li>
                   <li>
-                    <Link to="/odalar/2">Oda 2</Link>
-                  </li>
-                  <li>
-                    <Link to="/odalar/3">Oda 3</Link>
+                    <Link to="/odalar/cift-kisilik-oda">Cift Kişilik Oda</Link>
                   </li>
                 </ul>
               </li>
             </ul>
             <ul className="nav navbar-nav navbar-right">
               <li>
-                <Link to="/rezervasyon">Rezervasyon</Link>
+                <a href="https://fb.com/iskeleoteli/book/" target="_blank" rel="noopener noreferrer">                        
+                <span className='icon ion-link'></span> Rezervasyion Yap
+                </a>
               </li>
               <li className="dropdown">
                 <a
