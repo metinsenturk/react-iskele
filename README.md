@@ -20,6 +20,10 @@ Finally, there will be no database implementation in this project, the content w
 
 ## Project Status
 
+### March 24, 2019 - Price and Pictures
+
+Default images removed and and room information updated. March 10 issues are still ongoing. 
+
 ### March 10, 2019 - Information Updates and Few Fixes
 
 Reservation updated to FB booking. Old email, phone, etc. information updated. Broken links fixed.
