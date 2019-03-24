@@ -13,7 +13,7 @@ const RoomsHandler = props => {
       <Helmet
         title="İskele Butik Otel'de Odalar."
         link={[
-          { rel: "canonical", href: "https://iskelebutikhotel.com/odalar" }
+          { rel: "canonical", href: "https://iskeleotel.com/odalar" }
         ]}
         meta={[
           {
@@ -23,7 +23,7 @@ const RoomsHandler = props => {
           },
           { property: "og:type", content: "website" },
           { property: "og:title", content: "İskele Butik Otel Odaları" },
-          { property: "og:url", content: "https://iskelebutikhotel.com/odalar" }
+          { property: "og:url", content: "https://iskeleotel.com/odalar" }
         ]}
       />
       <Breadcrumb

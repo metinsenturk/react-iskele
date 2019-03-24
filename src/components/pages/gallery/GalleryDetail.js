@@ -90,6 +90,7 @@ GalleryDetail.defaultProps = {
       name: "Tüm Fotoğraflar",
       id: 1
     },
+    /*
     {
       class: "mutfak",
       name: "Mutfak",
@@ -109,7 +110,7 @@ GalleryDetail.defaultProps = {
       class: "acik-alan",
       name: "Otel Açık Alanı",
       id: 5
-    }
+    }*/
   ]
 };
 

@@ -24,7 +24,7 @@ const AboutInfo = props => {
               <div className="col-md-6">
                 <div className="about__pic">
                   <img
-                    src="assets/img/about_img.jpg"
+                    src="assets/img/genel/genel-10.jpg"
                     className="img-responsive"
                     alt="..."
                   />

@@ -15,7 +15,7 @@ const RoomsItem = (props) => {
               <div className="rooms__desc">
                 <div className="rooms_desc__header">
                   <h2 className="rooms_desc__title">{ room.roomName }</h2>
-                  <p className="rooms_desc__price"><span>{ room.roomCurrency + "" + room.roomPrice }</span> / {room.roomPricePerInterval}</p>
+                  {/* <p className="rooms_desc__price"><span>{ room.roomCurrency + "" + room.roomPrice }</span> / {room.roomPricePerInterval}</p> */}
                 </div> 
                 <p className="rooms_desc__desc">{ room.roomDescription }</p>
                 <div className="col-sm-6">

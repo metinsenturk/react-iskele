@@ -14,7 +14,7 @@ const AboutServices = props => {
             <p className="services__text">
               Otelimizde konaklamanız esnasında ihtiyacınız olabiliecek birçok hizmet sunuyoruz.
             </p>
-            <div className="services__img">
+            {/*<div className="services__img">
               <a href="#services__modal" data-toggle="modal">
                 <img
                   src="assets/img/about_services.jpg"
@@ -22,7 +22,7 @@ const AboutServices = props => {
                   alt="..."
                 />
               </a>
-            </div>
+  </div>*/}
           </div>
           <div className="col-sm-7">
             <div className="row">

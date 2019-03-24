@@ -91,7 +91,7 @@ class App extends Component {
           roomName: "Tek Kişilik Oda",
           roomSlug: "tek-kisilik-oda",
           roomCurrency: "$",
-          roomPrice: "79",
+          /*roomPrice: "79",*/
           roomPricePerInterval: "Gece",
           roomDescription: `20 metrekare genişliğinde, balkonlu bir odadır.`
         },
@@ -195,7 +195,7 @@ class App extends Component {
           roomName: "Çift Kişilik Oda",
           roomSlug: "cift-kisilik-oda",
           roomCurrency: "$",
-          roomPrice: "99",
+          /*roomPrice: "99",*/
           roomPricePerInterval: "Gece",
           roomDescription:
             `Odamız 40 metrekareden oluşur. İçinde çift kişilik ve bir adet tek kişilik yatak
@@ -253,47 +253,82 @@ class App extends Component {
       ],
       images: [
         {
-          class: "mutfak",
-          url: "gallery_img1.jpg",
+          class: "genel",
+          url: "genel/genel-1.jpg",
+          alt: "",
+          caption: ""
+        },        
+        {
+          class: "genel",
+          url: "genel/genel-4.jpg",
+          alt: "",
+          caption: ""
+        },                
+        {
+          class: "genel",
+          url: "genel/genel-7.jpg",
           alt: "",
           caption: ""
         },
         {
-          class: "mutfak",
-          url: "gallery_img2.jpg",
+          class: "genel",
+          url: "genel/genel-8.jpg",
           alt: "",
           caption: ""
         },
         {
-          class: "iskele",
-          url: "gallery_img3.jpg",
+          class: "genel",
+          url: "genel/genel-9.jpg",
           alt: "",
           caption: ""
         },
         {
-          class: "bahce",
-          url: "gallery_img4.jpg",
+          class: "genel",
+          url: "genel/genel-10.jpg",
           alt: "",
           caption: ""
         },
         {
-          class: "bahce",
-          url: "gallery_img5.jpg",
+          class: "genel",
+          url: "genel/genel-11.jpg",
           alt: "",
           caption: ""
         },
         {
-          class: "acik-alan",
-          url: "gallery_img6.jpg",
+          class: "genel",
+          url: "genel/genel-12.jpg",
           alt: "",
           caption: ""
         },
         {
-          class: "acik-alan",
-          url: "gallery_img7.jpg",
+          class: "genel",
+          url: "genel/genel-2.jpg",
           alt: "",
           caption: ""
-        }
+        },
+        {
+          class: "genel",
+          url: "genel/genel-3.jpg",
+          alt: "",
+          caption: ""
+        },
+        {
+          class: "genel",
+          url: "genel/genel-6.jpg",
+          alt: "",
+          caption: ""
+        },
+        {
+          class: "genel",
+          url: "genel/genel-5.jpg",
+          alt: "",
+          caption: ""
+        },
+        /**
+         * 
+         * GENEL END
+         * 
+         */        
       ]
     };
 
