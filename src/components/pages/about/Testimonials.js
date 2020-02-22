@@ -1,4 +1,5 @@
 import React from "react";
+// eslint-disable-next-line 
 import TestimonialItem from "./TestimonialItem";
 
 class Testimonials extends React.Component {
@@ -92,9 +93,14 @@ class Testimonials extends React.Component {
                 className="owl-carousel owl-theme testimonials__body"
                 ref="testimonials__carousel"
               >
-              {this.testimonials.map((testimonial, index) => (
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsarac.mert%2Fposts%2F10157372877339699&width=500" width="500" height="226" style={{border: 'none', overflow: 'hidden'}}scrolling="no" frameBorder="0" allowtransparency="true" allow="encrypted-media" title="mert.sarac"></iframe>
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fyusuf.durmaz.92317%2Fposts%2F2286109678089085&width=500" width="500" height="180" style={{border: 'none', overflow: 'hidden'}} scrolling="no" frameBorder="0" allowtransparency="true" allow="encrypted-media" title="yusuf.durmaz"></iframe>
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fayse.karslioglu%2Fposts%2F10217534495657440&width=500" width="500" height="142" style={{border: 'none', overflow: 'hidden'}} scrolling="no" frameBorder="0" allowtransparency="true" allow="encrypted-media" title="ayse.karslioglu"></iframe>
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fayhan.karagoz.792%2Fposts%2F10156461908021698&width=500" width="500" height="142" style={{border: 'none', overflow: 'hidden'}} scrolling="no" frameBorder="0" allowtransparency="true" allow="encrypted-media" title="ayhan.karagoz"></iframe>
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FFethiCeleb%2Fposts%2F1864250977022489&width=500" width="500" height="161" style={{border: 'none', overflow: 'hidden'}} scrolling="no" frameBorder="0" allowtransparency="true" allow="encrypted-media" title="fethi.celebi"></iframe>
+              {/* {this.testimonials.map((testimonial, index) => (
                   <TestimonialItem key={index} testimonialItem={testimonial} />
-              ))}
+              ))} */}
               </div>
             </div>
           </div>

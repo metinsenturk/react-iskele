@@ -8,12 +8,12 @@ const Info = (props) => (
         <div className="info__column-left">
           <div className="section_info__contact hidden-xs">
             <p>
-              <i className="icon ion-android-pin" /> {props.address}
+              <i className="icon ion-android-pin" /> <a href={`https://goo.gl/maps/vkY76JpgETY7UKo67`} target="_blank">{props.address} </a>
             </p>
           </div>
           <div className="section_info__contact hidden-xs">
             <p>
-              <i className="icon ion-android-call" /> {props.phone}
+              <i className="icon ion-android-call" /> <a href={`tel:${props.phone}`}>{props.phone}</a>
             </p>
           </div>
         </div>
@@ -22,7 +22,7 @@ const Info = (props) => (
           url_twitter="http://twitter.com/iskeleoteli"
           url_fb="http://fb.com/iskeleoteli"
           url_instagram="http://instagram.com/iskeleoteli" />
-          <div className="dropdown lang-menu">
+          {/* <div className="dropdown lang-menu">
             <button
               className="dropdown-toggle"
               type="button"
@@ -40,7 +40,7 @@ const Info = (props) => (
                 <a href="tr">TR</a>
               </li>
             </ul>
-          </div>
+          </div> */}
           {/*
           <form className="search-form hidden-xs" role="search">
             <div className="form-group">

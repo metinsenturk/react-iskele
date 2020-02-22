@@ -60,10 +60,10 @@ const ContactDetails = props => {
               region: "tr"
             }}
             options={options}
-            defaultCenter={{ lat: 39.475337, lng: 26.2464967 }}
-            defaultZoom={11}
+            defaultCenter={{ lat: 39.4747901, lng: 26.2468193 }}
+            defaultZoom={16}
           >
-            <MapsMarker lat="39.475337" lng="26.2464967" text={"İskele Otel"} />
+            <MapsMarker lat="39.4747901" lng="26.2468193" text={"İskele Otel"} />
           </GoogleMapReact>
         </div>
       </div>

@@ -7,7 +7,7 @@ const Gallery = props => (
   <div>
     <Helmet
       title="Fotoğraflarla İskele Butik Otel."
-      link={[{ rel: "canonical", href: "https://iskelebutikhotel.com/galeri" }]}
+      link={[{ rel: "canonical", href: "https://iskeleotel.com/galeri" }]}
       meta={[
         {
           name: "description",
@@ -15,11 +15,11 @@ const Gallery = props => (
         },
         { property: "og:type", content: "website" },
         { property: "og:title", content: "İskele Butik Otel Resimleri. Bahçe, Yemek Salonu ve fazlasi." },
-        { property: "og:url", content: "https://iskelebutikhotel.com/galeri" }
+        { property: "og:url", content: "https://iskeleotel.com/galeri" }
       ]}
     />
     <Breadcrumb
-      contentBackgroundImage="gallery_bg.jpg"
+      contentBackgroundImage="genel-7.jpg"
       contentTitle="İskele Butik Otel Fotoğrafları"
       contentDescription="Sizin için odaların, genel otel görünümünün, Sivrice Koyu'nun, Assos Sahilinin fotoğraflarını çektik."
       breadcrumbCurrent="Fotoğraflar"

@@ -6,12 +6,12 @@ const Places = ({ match }) => {
   const urls = [
     {
       slug: "assos",
-      url: "https://iskelebutikhotel.com/assos",
+      url: "https://iskeleotel.com/assos",
       title: "Assos Otel | İskele Butik Otel",
       description: "Assos antik kenti ve assos antik tiyatro'da tatil için otel arayışınız son bulsun. İskele butik otel'de konaklayın.",
       og_title: "Assos antik kenti",
       og_type: "website",
-      og_url: "https://iskelebutikhotel.com/assos",
+      og_url: "https://iskeleotel.com/assos",
       heading: "Assos",
       paragraph: "Assos tarihten bu yana ilgi odağı olmuş bir yerdir."
     },

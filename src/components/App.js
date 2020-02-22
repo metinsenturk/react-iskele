@@ -14,6 +14,31 @@ import Page404 from "./pages/Page404";
 
 class App extends Component {
   render() {
+    const allPics = []
+    const picsGenel = []
+    for (let index = 1; index < 13; index++) {
+      let element = {
+        class: "genel",
+        url: `genel/genel-${index}.jpg`,
+        alt: "",
+        caption: ""
+      };
+      picsGenel.push(element) 
+    }
+    allPics.push.apply(allPics, picsGenel)
+
+    const pics202002 = []
+    for (let index = 1; index < 26; index++) {
+      let element = {
+        class: "genel",
+        url: `genel/2020-02-${index}.jpeg`,
+        alt: "",
+        caption: ""
+      };
+      pics202002.push(element) 
+    }
+    allPics.push.apply(allPics, pics202002)
+
     const data = {
       profileInfo: {
         name: "İskele Otel",
@@ -251,85 +276,7 @@ class App extends Component {
           image: ""
         }
       ],
-      images: [
-        {
-          class: "genel",
-          url: "genel/genel-1.jpg",
-          alt: "",
-          caption: ""
-        },        
-        {
-          class: "genel",
-          url: "genel/genel-4.jpg",
-          alt: "",
-          caption: ""
-        },                
-        {
-          class: "genel",
-          url: "genel/genel-7.jpg",
-          alt: "",
-          caption: ""
-        },
-        {
-          class: "genel",
-          url: "genel/genel-8.jpg",
-          alt: "",
-          caption: ""
-        },
-        {
-          class: "genel",
-          url: "genel/genel-9.jpg",
-          alt: "",
-          caption: ""
-        },
-        {
-          class: "genel",
-          url: "genel/genel-10.jpg",
-          alt: "",
-          caption: ""
-        },
-        {
-          class: "genel",
-          url: "genel/genel-11.jpg",
-          alt: "",
-          caption: ""
-        },
-        {
-          class: "genel",
-          url: "genel/genel-12.jpg",
-          alt: "",
-          caption: ""
-        },
-        {
-          class: "genel",
-          url: "genel/genel-2.jpg",
-          alt: "",
-          caption: ""
-        },
-        {
-          class: "genel",
-          url: "genel/genel-3.jpg",
-          alt: "",
-          caption: ""
-        },
-        {
-          class: "genel",
-          url: "genel/genel-6.jpg",
-          alt: "",
-          caption: ""
-        },
-        {
-          class: "genel",
-          url: "genel/genel-5.jpg",
-          alt: "",
-          caption: ""
-        },
-        /**
-         * 
-         * GENEL END
-         * 
-         */        
-      ]
+      images: allPics
     };
 
     return (

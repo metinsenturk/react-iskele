@@ -8,7 +8,7 @@ const Contact = props => (
     <Helmet
       title="İletişime Geçin."
       link={[
-        { rel: "canonical", href: "https://iskelebutikhotel.com/iletisim" }
+        { rel: "canonical", href: "https://iskeleotel.com/iletisim" }
       ]}
       meta={[
         {
@@ -18,11 +18,11 @@ const Contact = props => (
         },
         { property: "og:type", content: "website" },
         { property: "og:title", content: "İskele Koyunu bize sorun." },
-        { property: "og:url", content: "https://iskelebutikhotel.com/iletisim" }
+        { property: "og:url", content: "https://iskeleotel.com/iletisim" }
       ]}
     />
     <Breadcrumb
-      contentBackgroundImage="contacts_bg.jpg"
+      contentBackgroundImage="2020-02-19.jpeg"
       contentTitle="Bizimle İletişime Geçin."
       contentDescription="Otelimiz veya Sivrice Koyu hakkında sorularınız varsa, bize aşağıdaki bilgilerden ulaşabilirsiniz."
       breadcrumbCurrent="İletişim"

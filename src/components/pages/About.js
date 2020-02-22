@@ -11,7 +11,7 @@ const About = props => (
     <Helmet
       title="İskele Butik Otelin Sahipleriyle Tanışın."
       link={[
-        { rel: "canonical", href: "https://iskelebutikhotel.com/hakkimizda" }
+        { rel: "canonical", href: "https://iskeleotel.com/hakkimizda" }
       ]}
       meta={[
         {
@@ -20,16 +20,16 @@ const About = props => (
             "Behram Köyü'nünün İskele Koyunda bir butik otel. Otelin eviniz olduğu yer. Ev sahipleriyle tanışın."
         },
         { property: "og:type", content: "website" },
-        { property: "og:title", content: "İskele Butik Otel Hakkında" },
+        { property: "og:title", content: "İskele Oteli Hakkında" },
         {
           property: "og:url",
-          content: "https://iskelebutikhotel.com/hakkimizda"
+          content: "https://iskeleotel.com/hakkimizda"
         }
       ]}
     />
     <Breadcrumb
-      contentBackgroundImage="about_bg.jpg"
-      contentTitle="Butik Otel Hakkında"
+      contentBackgroundImage="genel-1.jpg"
+      contentTitle="İskele Oteli - Hakkında"
       contentDescription="Assos, Sivrice ve İskele'ye eşit uzaklıkta bir Butik Otel. Aile İşletmesi. Bizi Tanıyın."
       breadcrumbCurrent="Hakkımızda"
     />

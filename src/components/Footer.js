@@ -12,9 +12,9 @@ const Footer = props => (
               <h2 className="brand__logo">{props.hotel_name}</h2>
               <p className="brand__sublogo">{props.hotel_snag}</p>
               <Social
-                url_twitter="http://twitter.com/iskelebutikhotel"
-                url_fb="http://fb.com/iskelebutikhotel"
-                url_instagram="http://instagram.com/iskelebutikhotel"
+                url_twitter="http://twitter.com/iskeleoteli"
+                url_fb="http://fb.com/iskeleoteli"
+                url_instagram="http://instagram.com/iskeleoteli"
               />
             </div>
           </div>
@@ -111,7 +111,7 @@ const Footer = props => (
           <div className="col-xs-12">
             <hr />
             <p className="footer_copyright__text">
-              &#169; 2019 İskele Otel. Tüm Hakları Saklıdır.
+              &#169; 2020 İskele Otel. Tüm Hakları Saklıdır.
             </p>
           </div>
         </div>

@@ -7,7 +7,7 @@ const Reservation = (props) => {
     <div>
       <Helmet
       title="İskele Butik Otel - Rezervasyon Yapın"
-      link={[{ rel: "canonical", href: "https://iskelebutikhotel.com/rezervasyon" }]}
+      link={[{ rel: "canonical", href: "https://iskeleotel.com/rezervasyon" }]}
       meta={[
         {
           name: "description",
@@ -15,7 +15,7 @@ const Reservation = (props) => {
         },
         { property: "og:type", content: "website" },
         { property: "og:title", content: "İskele Butik Otele rezervasyon yapın. Rezervasyonlarınızı telefonla arayarak hızlıca yapabilirsiniz." },
-        { property: "og:url", content: "https://iskelebutikhotel.com/rezervasyon" }
+        { property: "og:url", content: "https://iskeleotel.com/rezervasyon" }
       ]}
     />
     <Breadcrumb

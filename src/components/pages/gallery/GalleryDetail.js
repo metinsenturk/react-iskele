@@ -6,21 +6,22 @@ class GalleryDetail extends Component {
   constructor(props) {
     super(props);
 
-    let currentTab = 1;
-    let images;
-    if (this.props.location.hash) {
-      let tab = this.props.navItems.filter(item => `#${item.class}` === this.props.location.hash)[0];
-      currentTab = tab.id;
-      images = tab.id === 1 ? this.props.images : this.props.images.filter(image => image.class === tab.class);
-      console.log(currentTab)
-    } else {
-      images = this.props.images;
-    }
+    // let currentTab = 1;
+    // let images 
+    // console.log(this.props.location.hash)
+    // if (this.props.location.hash) {
+    //   let tab = this.props.navItems.filter(item => `#${item.class}` === this.props.location.hash)[0];
+    //   currentTab = tab.id;
+    //   images = tab.id === 1 ? this.props.images : this.props.images.filter(image => image.class === tab.class);
+    //   // console.log(currentTab)
+    // } else {
+    //   images = this.props.images;
+    // }
 
     this.state = {
-      images: images,
+      images: this.props.images,
       navItems: this.props.navItems,
-      currentTab: currentTab
+      currentTab: 1
     };
   }
 
@@ -49,10 +50,7 @@ class GalleryDetail extends Component {
                 <hr className="line1" />
               </div>
               <p className="section__subtitle">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Deleniti sit dicta quae natus quasi ratione quis id, tenetur
-                atque blanditiis aperiam mollitia enim corporis ex praesentium
-                reprehenderit.
+                Otelden manzaralar.
               </p>
             </div>
           </div>
