@@ -2,6 +2,8 @@
 
 This is a website for Hotel. The website is mainly for marketing purposes only.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bd99776c-c897-45d2-bcbb-ceafcfe2c525/deploy-status)](https://app.netlify.com/sites/iskeleotel/deploys)
+
 ## Description
 
 This project is built with react. The aim is to practice react applications, so it is not recommended for production use.
