@@ -1,54 +1,51 @@
-# The Website of Hotel in Bektas Village, Canakkale, Turkey
+# Iskele Otel
+
+7 dönüm zeytinlik alanının içinde bir aile otelidir İskele Otel. 8 odasıyla nispeten küçük olan otel, misafirlerine sessiz ve sakin olan Assos bölgesinde güzel bir tatil imkanı sunar. Otel sahiplerinin eşşiz lezzetli ve yörenin mutfağindan sunumları da tatilinize bir başka renk tatacağına emin olabilirsiniz.
+
+Rezervasyon için [Facebook Rezervasyonlar](https://www.facebook.com/iskeleoteli/appointments/) ile rezervasyonunuzu iletin veya [FB Messenger](https://m.me/iskeleoteli) ile otel sahiplerine ulaşın.
+
+Otel hakkında daha fazla bilgi için, [websitemizi](https://iskeleotel.com/) ziyaret edebilirsiniz.
+
+## Otelden Resimler
+
+<p float="left">
+  <img src="https://github.com/metinsenturk/react-iskele/blob/master/public/assets/img/genel/genel-1.jpg" width="100" />
+  <img src="https://github.com/metinsenturk/react-iskele/blob/master/public/assets/img/genel/genel-2.jpg" width="100" /> 
+  <img src="https://github.com/metinsenturk/react-iskele/blob/master/public/assets/img/genel/genel-4.jpg" width="100" />
+  <img src="https://github.com/metinsenturk/react-iskele/blob/master/public/assets/img/genel/genel-5.jpg" width="100" />
+  <img src="https://github.com/metinsenturk/react-iskele/blob/master/public/assets/img/genel/2020-02-23.jpeg" width="100" />
+  <img src="https://github.com/metinsenturk/react-iskele/blob/master/public/assets/img/genel/2020-02-12.jpeg" width="100" />
+  <img src="https://github.com/metinsenturk/react-iskele/blob/master/public/assets/img/genel/2020-02-11.jpeg" width="100" />
+  <img src="https://github.com/metinsenturk/react-iskele/blob/master/public/assets/img/genel/genel-6.jpg" width="100" />
+  <img src="https://github.com/metinsenturk/react-iskele/blob/master/public/assets/img/genel/2020-02-13.jpeg" width="100" />
+  <img src="https://github.com/metinsenturk/react-iskele/blob/master/public/assets/img/genel/genel-3.jpg" width="100" />
+  <img src="https://github.com/metinsenturk/react-iskele/blob/master/public/assets/img/genel/2020-02-15.jpeg" width="100" />
+  <img src="https://github.com/metinsenturk/react-iskele/blob/master/public/assets/img/genel/2020-02-1.jpeg" width="100" />
+  <img src="https://github.com/metinsenturk/react-iskele/blob/master/public/assets/img/genel/2020-02-10.jpeg" width="100" />
+  <img src="https://github.com/metinsenturk/react-iskele/blob/master/public/assets/img/genel/2020-02-21.jpeg" width="100" />
+</p>
+
+## Gezilecek ve Görülecek Yerler
+
+Bektaş köyünün birçok özelliği arasında en bilinenleri bölgedeki tarihi eserlere yakınlığı ve ege denizinin masmavi denizi diyebiliriz. Otelin sahiplerinden bölge hakkındaki görülmesi mutlaka yerler arasında aşağıdakileri sayabiliriz.
+
+- Assos Antik Liman
+- Athena Tapınağı
+- Behramkale Köyü
+- Apollon Smintheus
+- Adatepe Köyü (Kaz Dağı)
+- Yeşilyurt
+
+Bölgenin tarihi dokusu ve yaşanan tarihi hakkında daha fazla bilgi almak için [Assos Rehberimden](https://www.assosrehberim.com/) bilgi alabilirsiniz.
+
+Assos bölgesinde, Bektaş Köyü’nün sahilinde, 
+Bektas Köyü, Canakkale, Turkey
 
 This is a website for Hotel. The website is mainly for marketing purposes only.
 
+
+## Site Hakkında
+
+Bu websitesi açık kaynaklı olup, [Netlify](https://netlify.com/) ile sizlere sunulmaktadır. 
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bd99776c-c897-45d2-bcbb-ceafcfe2c525/deploy-status)](https://app.netlify.com/sites/iskeleotel/deploys)
-
-## Description
-
-This project is built with react. The aim is to practice react applications, so it is not recommended for production use.
-
-Since this website has not many user interactions, most of the components are stateless, which makes it very fast. React-Router is used in this project to implement routing inside the application. The project consist of the following paths.
-
-1. Pages' implementation
-2. Seo recheck
-3. Design updates
-4. Creation of Rezervation page
-5. Language Implementation
-6. Blog Implementation
-7. Implementation of Payment API
-
-Finally, there will be no database implementation in this project, the content will be publicly available once it is finish.
-
-## Project Status
-
-### March 24, 2019 - Price and Pictures
-
-Default images removed and and room information updated. March 10 issues are still ongoing. 
-
-### March 10, 2019 - Information Updates and Few Fixes
-
-Reservation updated to FB booking. Old email, phone, etc. information updated. Broken links fixed.
-
-1. SEO still missing
-2. owlCarousel like modules still not loading after ComponentDidMount.
-3. local pages content missing.
-4. netlify forms not functional, possibly react dynamic pages.
-
-### July 10, 2018 - All pages implemented
-
-All of the pages, except the Reservation is implemented. Below is the two known bugs in this project.
-
-1. Owl-Carousel is not runing on page changes. (Not implemented in React)
-2. Isotope is not implemented in react. Therefore, tabs in gallery not changing.
-
-### Jan 6, 2019 - Images and Name updated
-
-Hotel name and url changed to iskeleotel.com. Hotel room pictures are updated to the orginal. Below are the issues needs attention so far.
-
-1. Phone number, site text and more images are needed.
-2. Navigation hotel rooms needs dynamic room names.
-3. Gallery doesn't reload images.
-4. Room Detail gallery page does not reload images appropriately.
-5. Reservation page does not implemented yet.
-6. Language doesn't implemented yet.
