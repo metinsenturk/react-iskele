@@ -50,10 +50,10 @@ const Nav = props => {
                     <Link to="/odalar">Tüm Odalar</Link>
                   </li>
                   <li>
-                    <Link to="/odalar/tek-kisilik-oda">Çift Kişilik Oda</Link>
+                    <Link to="/odalar/cift-kisilik-oda">Çift Kişilik Oda</Link>
                   </li>
                   <li>
-                    <Link to="/odalar/cift-kisilik-oda">Aile Odasi</Link>
+                    <Link to="/odalar/aile-odasi">Aile Odasi</Link>
                   </li>
                 </ul>
               </li>
