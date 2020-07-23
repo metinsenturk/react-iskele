@@ -54,7 +54,7 @@ class App extends Component {
       rooms: [
         {
           featureImage: "room-1/iskele-1.jpg",
-          featureImageAlt: "Tek Kişilik Oda Resmi",
+          featureImageAlt: "Çift Kişilik Oda Resmi",
           images: [
             {
               url: "room-1/iskele-1.jpg",
@@ -113,16 +113,16 @@ class App extends Component {
               alt: ""
             },
           ],
-          roomName: "Tek Kişilik Oda",
-          roomSlug: "tek-kisilik-oda",
+          roomName: "Çift Kişilik Oda",
+          roomSlug: "cift-kisilik-oda",
           roomCurrency: "$",
           /*roomPrice: "79",*/
-          roomPricePerInterval: "Gece",
+          // roomPricePerInterval: "Gece",
           roomDescription: `20 metrekare genişliğinde, balkonlu bir odadır.`
         },
         {
           featureImage: "room-2/iskele-8.jpg",
-          featureImageAlt: "Çift Kişilik Oda Resmi",
+          featureImageAlt: "Aile Odası Resmi",
           images: [
             {
               url: "room-2/iskele-1.jpg",
@@ -217,11 +217,11 @@ class App extends Component {
               alt: ""
             },
           ],
-          roomName: "Çift Kişilik Oda",
-          roomSlug: "cift-kisilik-oda",
+          roomName: "Aile Odası Resmi",
+          roomSlug: "aile-odasi",
           roomCurrency: "$",
           /*roomPrice: "99",*/
-          roomPricePerInterval: "Gece",
+          // roomPricePerInterval: "Gece",
           roomDescription:
             `Odamız 40 metrekareden oluşur. İçinde çift kişilik ve bir adet tek kişilik yatak
             mevcut. Genzi ve ferah olan odanın 2 büyük balkonu da vardır. Geniş odanızda
