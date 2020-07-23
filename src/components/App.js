@@ -125,11 +125,15 @@ class App extends Component {
           featureImageAlt: "Aile Odası Resmi",
           images: [
             {
-              url: "room-2/iskele-1.jpg",
+              url: "room-2/iskele-2.jpg",
               alt: ""
             },
             {
-              url: "room-2/iskele-2.jpg",
+              url: "room-2/iskele-6.jpg",
+              alt: ""
+            },
+            {
+              url: "room-2/iskele-1.jpg",
               alt: ""
             },
             {
@@ -142,10 +146,6 @@ class App extends Component {
             },
             {
               url: "room-2/iskele-5.jpg",
-              alt: ""
-            },
-            {
-              url: "room-2/iskele-6.jpg",
               alt: ""
             },
             {
