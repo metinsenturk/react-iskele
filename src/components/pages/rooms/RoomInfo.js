@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import './overrides.css';  
 
 const RoomInfo = props => {
   const room = props.room;
@@ -20,9 +21,9 @@ const RoomInfo = props => {
     </Carousel>
       <div className="room_price__body">
         <h2 className="room__name">{room.roomName}</h2>
-        <p className="room__price">
+        {/* <p className="room__price">
           <span>{room.roomCurrency}{room.roomPrice}</span> / {room.roomPricePerInterval}
-        </p>
+        </p> */}
       </div>
       <p className="subheading">Oda Hakkında Bilgiler</p>
       <div className="room__desc">

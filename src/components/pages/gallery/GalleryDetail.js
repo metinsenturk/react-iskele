@@ -25,6 +25,14 @@ class GalleryDetail extends Component {
     };
   }
 
+  shuffle(a) {
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
   handleClick(tab) {
     const images = this.props.images;
     let selected = tab.id === 1 ? images : images.filter(image => image.class === tab.class);
@@ -36,7 +44,7 @@ class GalleryDetail extends Component {
 
   render() {
     const navItems = this.state.navItems;
-    const images = this.state.images;
+    const images = this.shuffle(this.state.images);
 
     return (
       <section className="section__gallery-alt">
