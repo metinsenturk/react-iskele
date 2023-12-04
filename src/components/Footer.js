@@ -16,6 +16,7 @@ const Footer = props => (
                 url_fb="http://fb.com/iskeleoteli"
                 url_instagram="http://instagram.com/iskeleoteli"
               />
+              <p>Pansiyonun fiziki yapısından dolayı engelli misafir kabul edememekteyiz.</p>
             </div>
           </div>
           <div className="col-xs-12 col-sm-4 col-sm-pull-4 col-md-3 col-md-pull-6">
@@ -36,6 +37,9 @@ const Footer = props => (
                   </li>
                   <li>
                     <Link to="/iletisim">İletişim</Link>
+                  </li>
+                  <li>
+                    <Link to="/assets/files/Surdurulebilirlik-Politika-Belgesi-İSKELE-PANS.pdf" target="_blank">Surdurulebilirlik Politikasi</Link>
                   </li>
                 </ul>
               </div>
