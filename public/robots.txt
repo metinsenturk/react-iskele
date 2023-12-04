@@ -7,6 +7,6 @@ Allow: /iletisim
 Disallow: /assets
 Disallow: /static
 Disallow: /screenshots
-Sitemap: http://iskelebutikhotel.com/sitemap.xml
+Sitemap: http://iskeleotel.com/sitemap.xml
 
 
