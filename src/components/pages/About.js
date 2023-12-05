@@ -9,7 +9,7 @@ import AboutServices from "./about/AboutServices";
 const About = props => (
   <div>
     <Helmet
-      title="İskele Butik Otelin Sahipleriyle Tanışın."
+      title="İskele Otelin Sahipleriyle Tanışın."
       link={[
         { rel: "canonical", href: "https://iskeleotel.com/hakkimizda" }
       ]}
