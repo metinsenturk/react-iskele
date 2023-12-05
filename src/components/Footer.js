@@ -39,7 +39,7 @@ const Footer = props => (
                     <Link to="/iletisim">İletişim</Link>
                   </li>
                   <li>
-                    <Link to="./../../assets/files/surdurulebilirlik-belgesi.pdf" target="blank" type="application/pdf" rel="alternate">Surdurulebilirlik Politikasi</Link>
+                    <Link to="./../../assets/files/surdurulebilirlik-belgesi.pdf" target="_blank" type="application/pdf" rel="alternate">Surdurulebilirlik Politikasi</Link>
                   </li>
                 </ul>
               </div>
