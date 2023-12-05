@@ -61,7 +61,7 @@ const AboutInfo = props => {
                   Havaalanına 110 km uzaklıktadır.
                   </h4>
                   <p>Otelimiz, doğanın tüm unsurları ile birlikte sürdürülebilir bir gezegende, insani var oluşun sağlıklı bir şekilde devamlılığının sağlanması için, tüm dünya olarak birlikte çaba sarf edilmesi gereken bir dönemde olunduğunun bilincindedir.
-                  Daha fazla bilgi icin <Link to="/assets/files/Surdurulebilirlik-Politika-Belgesi-İSKELE-PANS.pdf" target="_blank">Surdurulebilirlik Politika'mizi</Link> okuyun.
+                  Daha fazla bilgi icin <Link to="assets/files/Surdurulebilirlik-Politika-Belgesi-İSKELE-PANS.pdf" target="_blank">Surdurulebilirlik Politika'mizi</Link> okuyun.
                   </p>
 
                 </div>
