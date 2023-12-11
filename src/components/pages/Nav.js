@@ -2,11 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Nav = props => {
+  const boldText = {
+    fontWeight: 'bold'
+  }
+  
   return (
     <div>
 
       <nav className="navbar navbar-default">
-        <div className="container">
+        <div className="container" style={boldText}>
           <div className="navbar-header">
             <button
               type="button"

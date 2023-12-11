@@ -115,7 +115,7 @@ const Footer = props => (
           <div className="col-xs-12">
             <hr />
             <p className="footer_copyright__text">
-              &#169; 2020 İskele Otel. Tüm Hakları Saklıdır.
+              &#169; {new Date().getFullYear()} İskele Otel. Tüm Hakları Saklıdır.
             </p>
           </div>
         </div>
