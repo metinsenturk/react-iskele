@@ -81,6 +81,7 @@ class Home extends React.Component {
                   >
                     Facebook ile Rezervasyon Yap
               </a>
+              <p>Pansiyonun fiziki yapısından dolayı engelli misafir kabul edememekteyiz.</p>
                 </div>
               </div>
             </div>

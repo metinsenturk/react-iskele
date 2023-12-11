@@ -1,5 +1,7 @@
 # Iskele Otel
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bd99776c-c897-45d2-bcbb-ceafcfe2c525/deploy-status)](https://app.netlify.com/sites/iskeleotel/deploys)
+
 7 dönüm zeytinlik alanının içinde bir aile otelidir İskele Otel. 8 odasıyla nispeten küçük olan otel, misafirlerine sessiz ve sakin olan Assos bölgesinde güzel bir tatil imkanı sunar. Otel sahiplerinin eşşiz lezzetli ve yörenin mutfağindan sunumları da tatilinize bir başka renk tatacağına emin olabilirsiniz.
 
 Rezervasyon için [Facebook Rezervasyonlar](https://www.facebook.com/iskeleoteli/appointments/) ile rezervasyonunuzu iletin veya [FB Messenger](https://m.me/iskeleoteli) ile otel sahiplerine ulaşın.

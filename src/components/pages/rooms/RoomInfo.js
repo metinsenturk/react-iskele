@@ -29,6 +29,7 @@ const RoomInfo = props => {
       <div className="room__desc">
         {room.roomDescription}
       </div>
+      <p>Pansiyonun fiziki yapısından dolayı engelli misafir kabul edememekteyiz.</p>
       <Link to="/rezervasyon" className="btn">Odayı Rezerve Edin</Link>
     </div>
   );

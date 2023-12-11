@@ -16,6 +16,7 @@ const Footer = props => (
                 url_fb="http://fb.com/iskeleoteli"
                 url_instagram="http://instagram.com/iskeleoteli"
               />
+              <p>Pansiyonun fiziki yapısından dolayı engelli misafir kabul edememekteyiz.</p>
             </div>
           </div>
           <div className="col-xs-12 col-sm-4 col-sm-pull-4 col-md-3 col-md-pull-6">
@@ -36,6 +37,9 @@ const Footer = props => (
                   </li>
                   <li>
                     <Link to="/iletisim">İletişim</Link>
+                  </li>
+                  <li>
+                    <Link to="/assets/files/surdurulebilirlik-belgesi.pdf" target="_blank" type="application/pdf" rel="noopener noreferrer">Surdurulebilirlik Politikasi</Link>
                   </li>
                 </ul>
               </div>
@@ -111,7 +115,7 @@ const Footer = props => (
           <div className="col-xs-12">
             <hr />
             <p className="footer_copyright__text">
-              &#169; 2020 İskele Otel. Tüm Hakları Saklıdır.
+              &#169; {new Date().getFullYear()} İskele Otel. Tüm Hakları Saklıdır.
             </p>
           </div>
         </div>

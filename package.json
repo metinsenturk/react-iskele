@@ -2,6 +2,7 @@
   "name": "react-iskele",
   "version": "0.1.1",
   "private": true,
+  "homepage": "https://iskeleotel.com",
   "dependencies": {
     "google-map-react": "^1.1.7",
     "imagesloaded": "^4.1.4",

@@ -11,7 +11,7 @@ const RoomsHandler = props => {
   return (
     <div>
       <Helmet
-        title="İskele Butik Otel'de Odalar."
+        title="İskele Otel'de Odalar."
         link={[
           { rel: "canonical", href: "https://iskeleotel.com/odalar" }
         ]}
@@ -22,7 +22,7 @@ const RoomsHandler = props => {
               "Bir tatilde aradığınız herşeyin olduğu odalar. Tam donanımlı odalarımızda İskele Koyu'nun ve oda servisinin tadını çıkarın."
           },
           { property: "og:type", content: "website" },
-          { property: "og:title", content: "İskele Butik Otel Odaları" },
+          { property: "og:title", content: "İskele Otel Odaları" },
           { property: "og:url", content: "https://iskeleotel.com/odalar" }
         ]}
       />
