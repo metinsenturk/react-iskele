@@ -22,14 +22,14 @@ const Nav = props => {
             </button>
 
             <a className="navbar-brand" href="/">
-              <h3 className="navbar-brand__logo">{ props.hotel_name }</h3>
-              <p className="navbar-brand__sublogo">{ props.hotel_snag }</p>
+              <h3 className="navbar-brand__logo">{props.hotel_name}</h3>
+              <p className="navbar-brand__sublogo">{props.hotel_snag}</p>
             </a>
           </div>
 
           <div className="collapse navbar-collapse" id="navbar__collapse">
             <ul className="nav navbar-nav navbar-left">
-            <li>
+              <li>
                 <Link to="/">Anasayfa</Link>
               </li>
               <li>
@@ -46,7 +46,7 @@ const Nav = props => {
                   Odalar <i className="icon ion-chevron-down" />
                 </a>
                 <ul className="dropdown-menu">
-                <li>
+                  <li>
                     <Link to="/odalar">Tüm Odalar</Link>
                   </li>
                   <li>
@@ -60,9 +60,7 @@ const Nav = props => {
             </ul>
             <ul className="nav navbar-nav navbar-right">
               <li>
-                <a href="https://fb.com/iskeleoteli/book/" target="_blank" rel="noopener noreferrer">                        
-                <span className='icon ion-link'></span> Rezervasyion Yap
-                </a>
+                <Link to="/iletisim">İletişim</Link>
               </li>
               <li className="dropdown">
                 <a
@@ -92,9 +90,30 @@ const Nav = props => {
                   </li>
                 </ul>
               </li>
-              <li>
-              <Link to="/iletisim">İletişim</Link>
+              <li className="dropdown">
+
+                <a
+                  className="dropdown-toggle"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Diger <i className="icon ion-chevron-down" />
+                </a>
+                <ul className="dropdown-menu">
+                  <li>
+                    <a href="https://fb.com/iskeleoteli/book/" target="_blank" rel="noopener noreferrer">
+                      <span className='icon ion-link'></span> Rezervasyion Yap
+                    </a>
+                  </li>
+                  <li>
+                    <Link to="/assets/files/surdurulebilirlik-belgesi.pdf" target="_blank" type="application/pdf" rel="noopener noreferrer">Surdurulebilirlik Politikasi</Link>
+                  </li>
+                </ul>
               </li>
+
+
             </ul>
           </div>
         </div>
