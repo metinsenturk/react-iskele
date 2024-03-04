@@ -39,7 +39,7 @@ const Footer = props => (
                     <Link to="/iletisim">İletişim</Link>
                   </li>
                   <li>
-                    <Link to="/assets/files/surdurulebilirlik-belgesi.pdf" target="_blank" type="application/pdf" rel="noopener noreferrer">Surdurulebilirlik Politikasi</Link>
+                    <Link to="/assets/files/surdurulebilirlik-belgesi.pdf" target="_blank" type="application/pdf" rel="noopener noreferrer">Sürdürülebilirlik Politikasi</Link>
                   </li>
                 </ul>
               </div>
@@ -86,12 +86,12 @@ const Footer = props => (
                   <div id="mc_embed_signup_scroll">
                     <div className="mc-field-group form-group">
                       <label htmlFor="mce-EMAIL" className="sr-only">
-                        E-post Adresi
+                        E-posta Adresi
                       </label>
                       <input
                         type="email"
                         className="required email form-control newsletter_input"
-                        placeholder="Eposta adresiniz"
+                        placeholder="E-posta adresiniz"
                       />
                     </div>
                     
